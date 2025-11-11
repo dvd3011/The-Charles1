@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Planta
+  - Livro
+  - BeijaFlor
+  - Sapo
+  - PortaBiblio
+  - PortaUniversidade
+  - BiblioDentro
+  - UniversidadeDentro
+  - Henslow
+  - Arvore
+  - SalaDentro
+  - Madeira
+  - Folha
+  - Banana
+  - Pedra
+  - Semente
+  - RegiaoMacaco
+  - RegiaoPassaro
+  - Borboleta
+  - Tentilhao
+  - Cover
+  - Cipo
+  - Borracha
+  - Fruta
+  - Fogueira
+  - RegEscava
+  - FitzRoy
+  - TentE
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Fossil
+  - Water
+  - UI
+  - Player
+  - Obstaculos
+  - Arvores
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

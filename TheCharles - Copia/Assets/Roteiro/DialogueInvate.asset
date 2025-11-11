@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10bd443602d22ad4cbe7464e1a333765, type: 3}
+  m_Name: DialogueInvate
+  m_EditorClassIdentifier: 
+  talkScript:
+  - name: Henslow
+    text: "Charles, voc\xEA sabe que j\xE1 fiz v\xE1rias viagens para estudo certo?"
+  - name: Charles
+    text: Certo.
+  - name: Henslow
+    text: "E que hoje em dia eu n\xE3o tenho mais a energia necess\xE1ria para fazer
+      tais viagens?"
+  - name: Charles
+    text: "Certo Henslow, mas aonde voc\xEA quer chegar com isso?"
+  - name: Henslow
+    text: "Eu recebi um convite para acompanhar uma expedi\xE7\xE3o que ir\xE1 mapear
+      a costa da Am\xE9rica do Sul, mas eu recusei e te recomendei."
+  - name: Charles
+    text: "Como assim professor? Voc\xEA \xE9 um estudioso renomado, eu ainda nem
+      me formei."
+  - name: Henslow
+    text: "A expedi\xE7\xE3o s\xF3 vai zarpar ano que vem, voc\xEA j\xE1 vai estar
+      formado e eu n\xE3o conhe\xE7o ningu\xE9m mais qualificado que voc\xEA para
+      acompanh\xE1-los."

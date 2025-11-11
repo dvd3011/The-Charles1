@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{a92142d6-3331-4525-8355-8dd9417a59fe}">
+		<property name="assetPath">
+			<value>MX/MXFase1-2.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>76.799999999999997</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{808c1b10-9e3d-49a3-9d33-fcd6d8e069f9}</destination>
+		</relationship>
+	</object>
+</objects>

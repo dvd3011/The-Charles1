@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{6aaf0fbb-b69f-494f-b519-0826c486b8ae}">
+		<property name="assetPath">
+			<value>BG/BGFX_Sapo.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>55.94718820861678</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{808c1b10-9e3d-49a3-9d33-fcd6d8e069f9}</destination>
+		</relationship>
+	</object>
+</objects>
