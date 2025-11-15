@@ -12,7 +12,7 @@ public class TypeTextAnimation : MonoBehaviour
     public TextMeshProUGUI textObject;
     public string fullText;
 
-    public string typingSoundEvent = "event:/SFX/Typing"; // Caminho do seu evento FMOD
+    public string typingSoundEvent = "event:/SFX/Typing";
     EventInstance typingSoundInstance;
 
     Coroutine coroutine;
@@ -20,8 +20,11 @@ public class TypeTextAnimation : MonoBehaviour
     public void StartTyping()
     {
         typingSoundInstance = RuntimeManager.CreateInstance(typingSoundEvent);
-        typingSoundInstance.start();
 
+        // Registrar o evento para ser pausado e retomado
+        AudioManager.instance.RegisterDynamicEvent(typingSoundInstance);
+
+        typingSoundInstance.start();
         coroutine = StartCoroutine(TypeText());
     }
 
@@ -36,9 +39,7 @@ public class TypeTextAnimation : MonoBehaviour
             yield return new WaitForSeconds(typeDelay);
         }
 
-        typingSoundInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-        typingSoundInstance.release();
-
+        FinalizeSound();
         TypeFinished?.Invoke();
     }
 
@@ -47,9 +48,18 @@ public class TypeTextAnimation : MonoBehaviour
         if (coroutine != null)
             StopCoroutine(coroutine);
 
-        textObject.maxVisibleCharacters = textObject.text.Length;
+        textObject.maxVisibleCharacters = fullText.Length;
+        FinalizeSound();
+    }
+
+    private void FinalizeSound()
+    {
+        if (!typingSoundInstance.isValid())
+            return;
 
         typingSoundInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         typingSoundInstance.release();
+
+        AudioManager.instance.UnregisterDynamicEvent(typingSoundInstance);
     }
 }

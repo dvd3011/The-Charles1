@@ -1,6 +1,7 @@
 using UnityEngine;
 using FMODUnity;
 using FMOD.Studio;
+using System.Collections.Generic;
 
 public class AudioManager : MonoBehaviour
 {
@@ -8,13 +9,12 @@ public class AudioManager : MonoBehaviour
     private EventInstance backgEventInstance;
     private EventInstance wallafxEventInstance;
 
+    private List<EventInstance> dynamicEvents = new List<EventInstance>();
+
     [Header("Volumes iniciais")]
-    [Range(0f, 1f)]
-    public float initialMXVolume = 1f;
-    [Range(0f, 1f)]
-    public float initialBGVolume = 1f;
-    [Range(0f, 1f)]
-    public float initialWallafxVolume = 0f;
+    [Range(0f, 1f)] public float initialMXVolume = 1f;
+    [Range(0f, 1f)] public float initialBGVolume = 1f;
+    [Range(0f, 1f)] public float initialWallafxVolume = 0f;
 
     public static AudioManager instance { get; private set; }
 
@@ -26,7 +26,9 @@ public class AudioManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
+
         instance = this;
+        DontDestroyOnLoad(gameObject);
     }
 
     private void Start()
@@ -35,7 +37,6 @@ public class AudioManager : MonoBehaviour
         InitializeBG(FMODEvents.instance.backg);
         InitializeWallafx(FMODEvents.instance.wallafx);
 
-        // Aplica volumes iniciais do Inspector
         SetMXVolume(initialMXVolume);
         SetBGVolume(initialBGVolume);
         SetWallafxVolume(initialWallafxVolume);
@@ -59,7 +60,20 @@ public class AudioManager : MonoBehaviour
         wallafxEventInstance.start();
     }
 
-    // --- Controle de volumes ---
+    // Registrar e remover eventos dinâmicos
+    public void RegisterDynamicEvent(EventInstance instance)
+    {
+        if (instance.isValid())
+            dynamicEvents.Add(instance);
+    }
+
+    public void UnregisterDynamicEvent(EventInstance instance)
+    {
+        if (instance.isValid())
+            dynamicEvents.Remove(instance);
+    }
+
+    // Controle de volumes
     public void SetMXVolume(float volume)
     {
         if (musicEventInstance.isValid()) musicEventInstance.setVolume(volume);
@@ -78,5 +92,40 @@ public class AudioManager : MonoBehaviour
     public void PlayOneShot(EventReference sound, Vector3 worldPos)
     {
         RuntimeManager.PlayOneShot(sound, worldPos);
+    }
+
+    // PAUSAR
+    public void PauseAll()
+    {
+        if (musicEventInstance.isValid()) musicEventInstance.setPaused(true);
+        if (backgEventInstance.isValid()) backgEventInstance.setPaused(true);
+        if (wallafxEventInstance.isValid()) wallafxEventInstance.setPaused(true);
+
+        foreach (var e in dynamicEvents)
+            if (e.isValid()) e.setPaused(true);
+    }
+
+    // RETOMAR
+    public void ResumeAll()
+    {
+        if (musicEventInstance.isValid()) musicEventInstance.setPaused(false);
+        if (backgEventInstance.isValid()) backgEventInstance.setPaused(false);
+        if (wallafxEventInstance.isValid()) wallafxEventInstance.setPaused(false);
+
+        foreach (var e in dynamicEvents)
+            if (e.isValid()) e.setPaused(false);
+    }
+
+    // PARAR TODOS (mudança de cena)
+    public void StopAll()
+    {
+        if (musicEventInstance.isValid()) musicEventInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        if (backgEventInstance.isValid()) backgEventInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        if (wallafxEventInstance.isValid()) wallafxEventInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+
+        foreach (var e in dynamicEvents)
+            if (e.isValid()) e.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+
+        dynamicEvents.Clear();
     }
 }
