@@ -6,17 +6,13 @@ using FMOD.Studio;
 public class SonsIndependentes : MonoBehaviour
 {
     [Header("Escolha o som (FMODEvents)")]
-    [Tooltip("Selecione qual som do FMODEvents será reproduzido")]
     public SoundType soundType;
 
     [Header("Referência do Player")]
-    [Tooltip("Objeto que representa o jogador (ou câmera)")]
     [SerializeField] private Transform player;
 
     [Header("Configurações de Distância")]
-    [Tooltip("Distância em que o som é ouvido no volume máximo")]
     [SerializeField] private float minDistance = 2f;
-    [Tooltip("Distância máxima em que o som fica inaudível")]
     [SerializeField] private float maxDistance = 10f;
 
     [Header("Volume Base")]
@@ -31,11 +27,10 @@ public class SonsIndependentes : MonoBehaviour
     {
         if (FMODEvents.instance == null)
         {
-            Debug.LogError("FMODEvents.instance não encontrado na cena!");
+            Debug.LogError("FMODEvents.instance não encontrado!");
             return;
         }
 
-        // Seleciona o evento com base no enum escolhido no Inspector
         selectedEvent = GetEventReferenceFromType(soundType);
 
         if (selectedEvent.IsNull)
@@ -47,6 +42,8 @@ public class SonsIndependentes : MonoBehaviour
         soundInstance = RuntimeManager.CreateInstance(selectedEvent);
         soundInstance.start();
         isPlaying = true;
+
+        AudioManager.instance.RegisterDynamicEvent(soundInstance);
     }
 
     private void Update()
@@ -54,26 +51,27 @@ public class SonsIndependentes : MonoBehaviour
         if (!isPlaying || player == null)
             return;
 
-        // Atualiza posição 3D para FMOD
+        // Atualiza posição 3D
         soundInstance.set3DAttributes(RuntimeUtils.To3DAttributes(gameObject));
 
-        // Calcula volume baseado na distância
+        // Calcula volume pela distância
         float distance = Vector3.Distance(player.position, transform.position);
         float volume = CalculateVolume(distance);
-        soundInstance.setVolume(volume);
+
+        // Multiplica pelo volume master
+        soundInstance.setVolume(volume * AudioManager.instance.GetMasterVolume());
     }
 
     private float CalculateVolume(float distance)
     {
         if (distance <= minDistance)
             return baseVolume;
-        else if (distance >= maxDistance)
+
+        if (distance >= maxDistance)
             return 0f;
-        else
-        {
-            float t = (distance - minDistance) / (maxDistance - minDistance);
-            return Mathf.Lerp(baseVolume, 0f, t);
-        }
+
+        float t = (distance - minDistance) / (maxDistance - minDistance);
+        return Mathf.Lerp(baseVolume, 0f, t);
     }
 
     private EventReference GetEventReferenceFromType(SoundType type)
@@ -98,6 +96,8 @@ public class SonsIndependentes : MonoBehaviour
             soundInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
             soundInstance.release();
         }
+
+        AudioManager.instance.UnregisterDynamicEvent(soundInstance);
     }
 
 #if UNITY_EDITOR
