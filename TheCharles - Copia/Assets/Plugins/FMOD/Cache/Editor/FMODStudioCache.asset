@@ -1,0 +1,986 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9219437108890636038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/HFX/Beijinho
+  m_EditorClassIdentifier: 
+  Path: event:/HFX/Beijinho
+  Guid:
+    Data1: -250345800
+    Data2: 1184409147
+    Data3: 356564149
+    Data4: 483642434
+  Banks:
+  - {fileID: -1007162283510853099}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5500
+--- !u!114 &-8980323839616847551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/HFX/Macacao
+  m_EditorClassIdentifier: 
+  Path: event:/HFX/Macacao
+  Guid:
+    Data1: 24018953
+    Data2: 1190963210
+    Data3: 979855802
+    Data4: -1766411768
+  Banks:
+  - {fileID: -1007162283510853099}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 37000
+--- !u!114 &-7753951721383513565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/DocInt
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/DocInt
+  Guid:
+    Data1: -1405621133
+    Data2: 1217490906
+    Data3: 758141616
+    Data4: 897758579
+  Banks:
+  - {fileID: -1007162283510853099}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 450
+--- !u!114 &-7570544899390423567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/HFX/Tent3
+  m_EditorClassIdentifier: 
+  Path: event:/HFX/Tent3
+  Guid:
+    Data1: -501885774
+    Data2: 1284348709
+    Data3: 1567995022
+    Data4: -999320784
+  Banks:
+  - {fileID: 6065779990126426907}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 27768
+--- !u!114 &-7464546578775016484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BG/Patagos
+  m_EditorClassIdentifier: 
+  Path: event:/BG/Patagos
+  Guid:
+    Data1: 2073781286
+    Data2: 1118174957
+    Data3: 690875036
+    Data4: -1608070720
+  Banks:
+  - {fileID: -1007162283510853099}
+  - {fileID: -449163793425004186}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 180000
+--- !u!114 &-5256977228754357321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: SonsCharles/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638986215165610974
+  FileSizes:
+  - Name: Desktop
+    Value: 2040
+  Exists: 1
+--- !u!114 &-4416951909682012567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BG/MatoNaIlha
+  m_EditorClassIdentifier: 
+  Path: event:/BG/MatoNaIlha
+  Guid:
+    Data1: -1174329967
+    Data2: 1277606730
+    Data3: -1970338930
+    Data4: 1524209542
+  Banks:
+  - {fileID: -1007162283510853099}
+  - {fileID: 6065779990126426907}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 218120
+--- !u!114 &-4304945446452990896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MX/Rio
+  m_EditorClassIdentifier: 
+  Path: event:/MX/Rio
+  Guid:
+    Data1: 2011141323
+    Data2: 1101111598
+    Data3: -969963594
+    Data4: 1909547600
+  Banks:
+  - {fileID: 3769309883349974418}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 134000
+--- !u!114 &-2818401075305885713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/HFX/Tent2
+  m_EditorClassIdentifier: 
+  Path: event:/HFX/Tent2
+  Guid:
+    Data1: 1397442988
+    Data2: 1184759687
+    Data3: 1608215970
+    Data4: -1293471448
+  Banks:
+  - {fileID: 6065779990126426907}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 17000
+--- !u!114 &-1743742470785272693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MX/Cambridge
+  m_EditorClassIdentifier: 
+  Path: event:/MX/Cambridge
+  Guid:
+    Data1: 32870665
+    Data2: 1138486481
+    Data3: -646636364
+    Data4: -2104201011
+  Banks:
+  - {fileID: -1007162283510853099}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 130000
+--- !u!114 &-1670942017786002847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MX/Patagas
+  m_EditorClassIdentifier: 
+  Path: event:/MX/Patagas
+  Guid:
+    Data1: 963006389
+    Data2: 1191035437
+    Data3: -276156018
+    Data4: -833988408
+  Banks:
+  - {fileID: -449163793425004186}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 116200
+--- !u!114 &-1593312436848403617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FS/Footstep
+  m_EditorClassIdentifier: 
+  Path: event:/FS/Footstep
+  Guid:
+    Data1: 1881347050
+    Data2: 1110240706
+    Data3: -556012406
+    Data4: -841727130
+  Banks:
+  - {fileID: -1007162283510853099}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3300
+--- !u!114 &-1007162283510853099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Fase1.bank
+  m_EditorClassIdentifier: 
+  Path: SonsCharles/Build/Desktop/Fase1.bank
+  Name: Fase1
+  StudioPath: bank:/Fase1
+  lastModified: 638986215164736643
+  FileSizes:
+  - Name: Desktop
+    Value: 15435232
+  Exists: 1
+--- !u!114 &-449163793425004186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Fase3.bank
+  m_EditorClassIdentifier: 
+  Path: SonsCharles/Build/Desktop/Fase3.bank
+  Name: Fase3
+  StudioPath: bank:/Fase3
+  lastModified: 638986215165286098
+  FileSizes:
+  - Name: Desktop
+    Value: 5108640
+  Exists: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: -5256977228754357321}
+  - {fileID: -1007162283510853099}
+  - {fileID: 3769309883349974418}
+  - {fileID: -449163793425004186}
+  - {fileID: 6065779990126426907}
+  - {fileID: 7109953751609713190}
+  - {fileID: 352061496079857320}
+  EditorEvents:
+  - {fileID: 8085813003912179246}
+  - {fileID: -8980323839616847551}
+  - {fileID: -1743742470785272693}
+  - {fileID: -7464546578775016484}
+  - {fileID: 1303034647051504562}
+  - {fileID: 8706068915094543331}
+  - {fileID: 3277760796907441443}
+  - {fileID: -7753951721383513565}
+  - {fileID: 5406532346297883685}
+  - {fileID: 4673730196989636877}
+  - {fileID: -4416951909682012567}
+  - {fileID: -9219437108890636038}
+  - {fileID: 5610458372439983815}
+  - {fileID: 7156583298802293958}
+  - {fileID: 1339799685674460444}
+  - {fileID: 5912304301650775336}
+  - {fileID: 620697424613893181}
+  - {fileID: -1593312436848403617}
+  - {fileID: 8960676196811320593}
+  - {fileID: -4304945446452990896}
+  - {fileID: -1670942017786002847}
+  - {fileID: 7983073608757625558}
+  - {fileID: 7135840073768208906}
+  - {fileID: 8742368615657708048}
+  - {fileID: -2818401075305885713}
+  - {fileID: -7570544899390423567}
+  - {fileID: 1397911167671172189}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: 7109953751609713190}
+  StringsBanks:
+  - {fileID: -5256977228754357321}
+  cacheVersion: 131847
+  cacheTime: 638986215165610974
+  SerializableEventsDict:
+  - key: event:/BG/Mato
+    index: 0
+  - key: event:/HFX/Macacao
+    index: 1
+  - key: event:/MX/Cambridge
+    index: 2
+  - key: event:/BG/Patagos
+    index: 3
+  - key: event:/SFX/Intera
+    index: 4
+  - key: event:/BG/RioSom
+    index: 5
+  - key: event:/SFX/Coleta
+    index: 6
+  - key: event:/SFX/DocInt
+    index: 7
+  - key: event:/SFX/Captura
+    index: 8
+  - key: event:/BG/Walla
+    index: 9
+  - key: event:/BG/MatoNaIlha
+    index: 10
+  - key: event:/HFX/Beijinho
+    index: 11
+  - key: event:/HFX/Sapo
+    index: 12
+  - key: event:/MX/Final
+    index: 13
+  - key: event:/SFX/Porta
+    index: 14
+  - key: event:/SFX/Typing
+    index: 15
+  - key: event:/HFX/Tent1
+    index: 16
+  - key: event:/FS/Footstep
+    index: 17
+  - key: event:/SFX/ArmarDilha
+    index: 18
+  - key: event:/MX/Rio
+    index: 19
+  - key: event:/MX/Patagas
+    index: 20
+  - key: event:/BG/Foguin
+    index: 21
+  - key: event:/FS/FootstepSNW
+    index: 22
+  - key: event:/MX/Ilhas
+    index: 23
+  - key: event:/HFX/Tent2
+    index: 24
+  - key: event:/HFX/Tent3
+    index: 25
+  - key: event:/MX/Pausa
+    index: 26
+--- !u!114 &352061496079857320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SFX.bank
+  m_EditorClassIdentifier: 
+  Path: SonsCharles/Build/Desktop/SFX.bank
+  Name: SFX
+  StudioPath: bank:/SFX
+  lastModified: 638986215165610974
+  FileSizes:
+  - Name: Desktop
+    Value: 506
+  Exists: 1
+--- !u!114 &620697424613893181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/HFX/Tent1
+  m_EditorClassIdentifier: 
+  Path: event:/HFX/Tent1
+  Guid:
+    Data1: 617196009
+    Data2: 1173937639
+    Data3: -1864381551
+    Data4: 1600544495
+  Banks:
+  - {fileID: -1007162283510853099}
+  - {fileID: 6065779990126426907}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 20115
+--- !u!114 &1303034647051504562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Intera
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Intera
+  Guid:
+    Data1: 362500946
+    Data2: 1235281143
+    Data3: 1369808531
+    Data4: -636996551
+  Banks:
+  - {fileID: -1007162283510853099}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 465
+--- !u!114 &1339799685674460444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Porta
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Porta
+  Guid:
+    Data1: 836572625
+    Data2: 1303562765
+    Data3: 810065067
+    Data4: -2114108775
+  Banks:
+  - {fileID: -1007162283510853099}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1789
+--- !u!114 &1397911167671172189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MX/Pausa
+  m_EditorClassIdentifier: 
+  Path: event:/MX/Pausa
+  Guid:
+    Data1: -2047865817
+    Data2: 1282967976
+    Data3: 1006009
+    Data4: -39491933
+  Banks:
+  - {fileID: 7109953751609713190}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 63829
+--- !u!114 &3277760796907441443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Coleta
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Coleta
+  Guid:
+    Data1: 1750669162
+    Data2: 1227156313
+    Data3: -401163883
+    Data4: -1411797624
+  Banks:
+  - {fileID: -1007162283510853099}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 523
+--- !u!114 &3769309883349974418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Fase2.bank
+  m_EditorClassIdentifier: 
+  Path: SonsCharles/Build/Desktop/Fase2.bank
+  Name: Fase2
+  StudioPath: bank:/Fase2
+  lastModified: 638986215164919654
+  FileSizes:
+  - Name: Desktop
+    Value: 2500896
+  Exists: 1
+--- !u!114 &4673730196989636877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BG/Walla
+  m_EditorClassIdentifier: 
+  Path: event:/BG/Walla
+  Guid:
+    Data1: 1256582799
+    Data2: 1177350046
+    Data3: 214152115
+    Data4: -417796198
+  Banks:
+  - {fileID: -1007162283510853099}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 56600
+--- !u!114 &5406532346297883685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Captura
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Captura
+  Guid:
+    Data1: 215225732
+    Data2: 1135376588
+    Data3: 1790444982
+    Data4: 252257186
+  Banks:
+  - {fileID: -1007162283510853099}
+  - {fileID: 3769309883349974418}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 188
+--- !u!114 &5610458372439983815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/HFX/Sapo
+  m_EditorClassIdentifier: 
+  Path: event:/HFX/Sapo
+  Guid:
+    Data1: -2011007291
+    Data2: 1176715013
+    Data3: 786469010
+    Data4: 1445894569
+  Banks:
+  - {fileID: -1007162283510853099}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 15500
+--- !u!114 &5912304301650775336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Typing
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Typing
+  Guid:
+    Data1: 1675886290
+    Data2: 1327521727
+    Data3: -1108384639
+    Data4: 563738075
+  Banks:
+  - {fileID: -1007162283510853099}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 16000
+--- !u!114 &6065779990126426907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Fase4.bank
+  m_EditorClassIdentifier: 
+  Path: SonsCharles/Build/Desktop/Fase4.bank
+  Name: Fase4
+  StudioPath: bank:/Fase4
+  lastModified: 638986215165519666
+  FileSizes:
+  - Name: Desktop
+    Value: 3682368
+  Exists: 1
+--- !u!114 &7109953751609713190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: SonsCharles/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638986215165610974
+  FileSizes:
+  - Name: Desktop
+    Value: 603712
+  Exists: 1
+--- !u!114 &7135840073768208906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FS/FootstepSNW
+  m_EditorClassIdentifier: 
+  Path: event:/FS/FootstepSNW
+  Guid:
+    Data1: 954293757
+    Data2: 1244320286
+    Data3: -407115362
+    Data4: -1873975858
+  Banks:
+  - {fileID: -449163793425004186}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
+--- !u!114 &7156583298802293958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MX/Final
+  m_EditorClassIdentifier: 
+  Path: event:/MX/Final
+  Guid:
+    Data1: -902541881
+    Data2: 1156599276
+    Data3: 188275646
+    Data4: -1216957671
+  Banks:
+  - {fileID: -1007162283510853099}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 153600
+--- !u!114 &7983073608757625558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BG/Foguin
+  m_EditorClassIdentifier: 
+  Path: event:/BG/Foguin
+  Guid:
+    Data1: 1871690228
+    Data2: 1319441255
+    Data3: 245368250
+    Data4: 737774096
+  Banks:
+  - {fileID: -449163793425004186}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 130212
+--- !u!114 &8085813003912179246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BG/Mato
+  m_EditorClassIdentifier: 
+  Path: event:/BG/Mato
+  Guid:
+    Data1: -1321348092
+    Data2: 1202294642
+    Data3: -352604483
+    Data4: 1611090424
+  Banks:
+  - {fileID: -1007162283510853099}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 303515
+--- !u!114 &8706068915094543331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BG/RioSom
+  m_EditorClassIdentifier: 
+  Path: event:/BG/RioSom
+  Guid:
+    Data1: 1571538007
+    Data2: 1074989945
+    Data3: -1359830606
+    Data4: -42363996
+  Banks:
+  - {fileID: -1007162283510853099}
+  - {fileID: 3769309883349974418}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 97497
+--- !u!114 &8742368615657708048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MX/Ilhas
+  m_EditorClassIdentifier: 
+  Path: event:/MX/Ilhas
+  Guid:
+    Data1: -1840459920
+    Data2: 1101476659
+    Data3: -764292938
+    Data4: 971411548
+  Banks:
+  - {fileID: 6065779990126426907}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 69818
+--- !u!114 &8960676196811320593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/ArmarDilha
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/ArmarDilha
+  Guid:
+    Data1: -1074034367
+    Data2: 1137700479
+    Data3: -1661580112
+    Data4: -264729162
+  Banks:
+  - {fileID: 3769309883349974418}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 259
