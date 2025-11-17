@@ -41,6 +41,7 @@ public class InteractionFase3 : MonoBehaviour
     public PlayerState currentState = PlayerState.Idle;
     private DigSite currentDigSite; // Referência ao site atual sendo escavado
     private GameObject currentFossil; // CORREÇÃO: Variável de instância para escopo global (fóssil instanciado)
+    public GameObject minigameLimpezaObject;
 
     void Awake()
     {
@@ -72,7 +73,10 @@ public class InteractionFase3 : MonoBehaviour
             else
                 currentHeat -= heatLossRate * Time.deltaTime;
         }
-
+        if (currentState == PlayerState.Cleaning)
+        {
+            return;
+        }
         // Atualiza barra
         heatBar.value = currentHeat / maxHeat;
 
@@ -135,7 +139,6 @@ public class InteractionFase3 : MonoBehaviour
             // Se saindo de um site durante digging, cancele
             if (currentState == PlayerState.Digging && other.CompareTag("RegEscava"))
             {
-                EndDigging(false); // Cancela sem recompensa
             }
         }
     }
@@ -216,100 +219,63 @@ public class InteractionFase3 : MonoBehaviour
         pl.enabled = false; // Pausa movimento, similar à coleta
         anim.SetTrigger("StartDigging"); // Opcional: Trigger animação inicial
         Debug.Log("Iniciando escavação...");
+        if (minigameLimpezaObject != null) minigameLimpezaObject.SetActive(false);
+
         // Opcional: Ative partículas de neve ou UI de progresso aqui
     }
+   
 
     public void Dig() // Chamado a cada pressão de 'F' durante Digging
     {
         if (currentState != PlayerState.Digging || currentDigSite == null) return;
 
         currentDigs++;
-        // Feedback: Som de escavação, vibração no Android, ou UI
         Debug.Log("Escavando... Progresso: " + currentDigs + "/" + digsRequired);
-        // Opcional: placar.ShowDigProgress(currentDigs, digsRequired);
 
+        // --- NOVA LÓGICA: VERIFICAR FIM DA ESCAVAÇÃO ---
         if (currentDigs >= digsRequired)
         {
             CompleteDigging();
         }
+
     }
-
-    private void CompleteDigging()
+    void CompleteDigging()
     {
-        if (currentDigSite == null) return;
+        Debug.Log("Escavação concluída! Iniciando limpeza...");
 
-        currentDigSite.isDiscovered = true; // Marca como descoberto no site
-        bool isFossilFound = currentDigSite.isFossil;
-
-        if (isFossilFound)
+        // Marca o site como descoberto
+        if (currentDigSite != null)
         {
-            // Instancie o fóssil para limpeza (armazena em variável de instância)
-            currentFossil = Instantiate(currentDigSite.fossilPrefab, transform.position, Quaternion.identity);
-
-            Debug.Log("Fóssil descoberto! Preparando para limpeza.");
-        }
-        else
-        {
-            // Falso: Mensagem e destrua site
-            Debug.Log("Apenas um objeto falso ou já descoberto...");
-            currentFossil = null; // Sem fóssil
-            EndDigging(false);
-            Destroy(currentDigSite.gameObject); // Destrói o site falso
-            currentDigSite = null;
-            return; // Sai cedo sem ir para Cleaning
+            currentDigSite.isDiscovered = true;
         }
 
-        EndDigging(true); // Inicia transição para Cleaning (chama StartCleaning lá)
-        currentDigSite = null;
-    }
+        // Muda o estado para Cleaning (Limpeza)
+        currentState = PlayerState.Cleaning;
 
-    public void EndDigging(bool foundFossil)
-    {
-        currentState = PlayerState.Idle; // Reset inicial para Idle
-        pl.enabled = true; // Reativa movimento temporariamente
-        anim.SetBool("Escavando", false);
-
-        if (foundFossil && currentFossil != null)
+        // Ativa o Minigame da Vassoura
+        if (minigameLimpezaObject != null)
         {
-            currentState = PlayerState.Cleaning; // CORREÇÃO: Seta estado ANTES de chamar StartCleaning
-            // CORREÇÃO: Chamada única e robusta para iniciar limpeza
-            if (FossilCleaning.Instance != null)
-            {
-                FossilCleaning.Instance.StartCleaning(currentFossil);
-                Debug.Log("Modo de limpeza ativado. Use ferramentas no fóssil.");
-            }
-            else
-            {
-                Debug.LogError("Falha ao iniciar limpeza: FossilCleaning.Instance é null! Verifique se CleaningManager está na cena.");
-                // Fallback: Volta a Idle se falhar
-                currentState = PlayerState.Idle;
-                Destroy(currentFossil); // Limpa o fóssil instanciado
-                currentFossil = null;
-            }
-        }
-        else
-        {
-            // Reset para Idle diretamente (sem fóssil)
-            Debug.Log("Escavação concluída (sem fóssil).");
-            if (currentFossil != null)
-            {
-                Destroy(currentFossil); // Limpa se algo sobrou
-                currentFossil = null;
-            }
+            minigameLimpezaObject.SetActive(true);
+            // Ao ativar, o Start() do SpawPoeira vai rodar e criar a poeira
         }
     }
-
-    // Método para finalizar limpeza (chamado pelo FossilCleaning quando completo)
-    public void EndCleaning()
+    public void FinishCleaning()
     {
+        Debug.Log("Limpeza Concluída!");
+
+        // Desativa o minigame
+        if (minigameLimpezaObject != null)
+        {
+            minigameLimpezaObject.SetActive(false);
+        }
+
+        // Retorna o jogador ao estado normal
         currentState = PlayerState.Idle;
-        // Adicione fóssil ao inventário/placar
-        if (currentFossil != null)
-        {
-            Destroy(currentFossil); // Destrói o fóssil após limpeza (ou adicione ao inventário)
-            currentFossil = null;
-        }
-        Debug.Log("Limpeza concluída! Fóssil coletado.");
-        // Avance missão ou fase se necessário
+        pl.enabled = true; // Reativa movimento
+
+        // Aqui você pode instanciar o prêmio/fóssil final
+        // Instantiate(currentDigSite.fossilPrefab, ...);
     }
+
+
 }
