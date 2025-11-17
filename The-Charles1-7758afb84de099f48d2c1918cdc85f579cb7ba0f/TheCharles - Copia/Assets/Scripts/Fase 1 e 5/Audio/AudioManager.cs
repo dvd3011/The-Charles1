@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 public class AudioManager : MonoBehaviour
 {
-    private EventInstance musicEventInstance;
+    private EventInstance musicEventInstance; 
     private EventInstance backgEventInstance;
     private EventInstance wallafxEventInstance;
 
@@ -17,14 +17,6 @@ public class AudioManager : MonoBehaviour
     [Range(0f, 1f)] public float initialWallafxVolume = 0f;
 
     public static AudioManager instance { get; private set; }
-
-    // MASTER
-    private float masterVolume = 1f;
-
-    // Volumes individuais antes do master
-    private float currentMXVolume;
-    private float currentBGVolume;
-    private float currentWallafxVolume;
 
     private void Awake()
     {
@@ -68,34 +60,7 @@ public class AudioManager : MonoBehaviour
         wallafxEventInstance.start();
     }
 
-    // MASTER VOLUME
-    public void SetMasterVolume(float volume)
-    {
-        masterVolume = volume;
-
-        // Atualizar todos os canais com o master novo
-        SetMXVolume(currentMXVolume);
-        SetBGVolume(currentBGVolume);
-        SetWallafxVolume(currentWallafxVolume);
-
-        // Atualiza eventos dinâmicos
-        foreach (var e in dynamicEvents)
-        {
-            if (e.isValid())
-            {
-                float vol;
-                e.getVolume(out vol);
-                e.setVolume(vol * masterVolume);
-            }
-        }
-    }
-
-    public float GetMasterVolume()
-    {
-        return masterVolume;
-    }
-
-    // REGISTRAR
+    // Registrar e remover eventos dinâmicos
     public void RegisterDynamicEvent(EventInstance instance)
     {
         if (instance.isValid())
@@ -108,29 +73,20 @@ public class AudioManager : MonoBehaviour
             dynamicEvents.Remove(instance);
     }
 
-    // VOLUMES INDIVIDUAIS
+    // Controle de volumes
     public void SetMXVolume(float volume)
     {
-        currentMXVolume = volume;
-
-        if (musicEventInstance.isValid())
-            musicEventInstance.setVolume(volume * masterVolume);
+        if (musicEventInstance.isValid()) musicEventInstance.setVolume(volume);
     }
 
     public void SetBGVolume(float volume)
     {
-        currentBGVolume = volume;
-
-        if (backgEventInstance.isValid())
-            backgEventInstance.setVolume(volume * masterVolume);
+        if (backgEventInstance.isValid()) backgEventInstance.setVolume(volume);
     }
 
     public void SetWallafxVolume(float volume)
     {
-        currentWallafxVolume = volume;
-
-        if (wallafxEventInstance.isValid())
-            wallafxEventInstance.setVolume(volume * masterVolume);
+        if (wallafxEventInstance.isValid()) wallafxEventInstance.setVolume(volume);
     }
 
     public void PlayOneShot(EventReference sound, Vector3 worldPos)
@@ -160,21 +116,15 @@ public class AudioManager : MonoBehaviour
             if (e.isValid()) e.setPaused(false);
     }
 
-    // PARAR TUDO
+    // PARAR TODOS (mudança de cena)
     public void StopAll()
     {
-        if (musicEventInstance.isValid()) 
-            musicEventInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-
-        if (backgEventInstance.isValid()) 
-            backgEventInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-
-        if (wallafxEventInstance.isValid()) 
-            wallafxEventInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        if (musicEventInstance.isValid()) musicEventInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        if (backgEventInstance.isValid()) backgEventInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        if (wallafxEventInstance.isValid()) wallafxEventInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
 
         foreach (var e in dynamicEvents)
-            if (e.isValid()) 
-                e.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            if (e.isValid()) e.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
 
         dynamicEvents.Clear();
     }
