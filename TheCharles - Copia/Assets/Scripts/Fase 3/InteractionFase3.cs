@@ -43,6 +43,7 @@ public class InteractionFase3 : MonoBehaviour
     private GameObject currentFossil; // CORREÇÃO: Variável de instância para escopo global (fóssil instanciado)
     public GameObject minigameLimpezaObject;
     private SpawPoeira spoeira;
+    public GameObject canvasMinigame;
     void Awake()
     {
         currentHeat = maxHeat;
@@ -219,8 +220,12 @@ public class InteractionFase3 : MonoBehaviour
         pl.enabled = false; // Pausa movimento, similar à coleta
         anim.SetTrigger("StartDigging"); // Opcional: Trigger animação inicial
         Debug.Log("Iniciando escavação...");
-        if (minigameLimpezaObject != null) minigameLimpezaObject.SetActive(false);
+        if (minigameLimpezaObject != null)
+        {
+            minigameLimpezaObject.SetActive(false);
+            canvasMinigame.SetActive(false);
 
+        }
         // Opcional: Ative partículas de neve ou UI de progresso aqui
     }
    
@@ -256,6 +261,8 @@ public class InteractionFase3 : MonoBehaviour
         if (minigameLimpezaObject != null)
         {
             minigameLimpezaObject.SetActive(true);
+            canvasMinigame.SetActive(true);
+
             // REMOVA esta linha, pois o spawn já acontece no OnEnable() do SpawPoeira.cs
             // spoeira.SpawnarPoeira(); 
         }
@@ -268,6 +275,8 @@ public class InteractionFase3 : MonoBehaviour
         if (minigameLimpezaObject != null)
         {
             minigameLimpezaObject.SetActive(false);
+            canvasMinigame.SetActive(false);
+
         }
 
         // Retorna o jogador ao estado normal

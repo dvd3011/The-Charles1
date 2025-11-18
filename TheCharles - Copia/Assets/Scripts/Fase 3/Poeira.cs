@@ -47,11 +47,7 @@ public class Poeira : MonoBehaviour
     {
         // Verifica se foi a vassoura que tocou na poeira
         // Você pode checar por tag ou se o objeto tem o script Vassora
-        if (col.gameObject.GetComponent<Vassora>() != null || col.CompareTag("Vassoura"))
-        {
-            // Toca um som ou partícula aqui se quiser
-            Destroy(gameObject); // Destroi a poeira
-        }
+        
     }
 
 }
