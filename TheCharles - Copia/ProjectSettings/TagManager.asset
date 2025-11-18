@@ -33,6 +33,10 @@ TagManager:
   - FitzRoy
   - TentE
   - Vassoura
+  - RegEscava3
+  - RegEscava1
+  - RegEscava2
+  - RegEscava4
   layers:
   - Default
   - TransparentFX

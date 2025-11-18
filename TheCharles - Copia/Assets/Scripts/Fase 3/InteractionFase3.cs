@@ -46,7 +46,7 @@ public class InteractionFase3 : MonoBehaviour
     public GameObject canvasMinigame;
     public FadeController fadeController;
     public CollectFeedBack fb;
-
+    public Vassora vassouraScript;
     void Awake()
     {
         currentHeat = maxHeat;  
@@ -222,7 +222,6 @@ public class InteractionFase3 : MonoBehaviour
         currentDigs = 0;
         digsRequired = site.digsRequired; // Usa o valor do site (pode variar)
         pl.enabled = false; // Pausa movimento, similar à coleta
-        anim.SetTrigger("StartDigging"); // Opcional: Trigger animação inicial
         Debug.Log("Iniciando escavação...");
         if (minigameLimpezaObject != null)
         {
@@ -297,10 +296,12 @@ public class InteractionFase3 : MonoBehaviour
         // Desativa o minigame
         if (minigameLimpezaObject != null)
         {
-
             Destroy(objetoAtual);
+            if (vassouraScript != null)
+            {
+                vassouraScript.ResetPosition();
+            }
             fb.ShowFeedback("+1 Fossil", Color.yellow);
-            gameObject.GetComponent<BoxCollider2D>().enabled = false;
             placar.PlacarFossil(1);
             coletando = true;
             

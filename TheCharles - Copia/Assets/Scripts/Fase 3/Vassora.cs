@@ -88,4 +88,13 @@ public class Vassora : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragH
             rig.AddForce(force, ForceMode2D.Impulse);
         }
     }
+    public void ResetPosition()
+    {
+        // Reseta para a posição inicial local (startPosition)
+        // startPosition foi salva no método Start()
+        rectTransform.localPosition = startPosition;
+
+        // Garante que a velocidade (deltaMouse) seja zero, parando qualquer movimento de "empurrão"
+        deltaMouse = Vector3.zero;
+    }
 }
