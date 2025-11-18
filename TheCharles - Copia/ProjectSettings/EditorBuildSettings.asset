@@ -6,11 +6,26 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Inicio.unity
+    guid: 30d81454d2b523743a5e516c96a5a7e3
+  - enabled: 1
+    path: Assets/Scenes/Diario.unity
+    guid: 4fa368eef90268145908c3b1b95da75a
+  - enabled: 1
     path: Assets/Scenes/MapaAberto.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Inicio.unity
-    guid: 30d81454d2b523743a5e516c96a5a7e3
+    path: Assets/Scenes/Fase2.unity
+    guid: 995476c16e08fb14ea73893f5e50e34b
+  - enabled: 1
+    path: Assets/Scenes/Fase3.unity
+    guid: 6f9465e69d64ae945b00a79dcd7a7f20
+  - enabled: 1
+    path: Assets/Scenes/Fase4.unity
+    guid: d6b027e4b8a37174d8249b9be998a84d
+  - enabled: 1
+    path: Assets/Scenes/Fase5.unity
+    guid: 548d9dd07bab31e48b087e193f10eaa5
   - enabled: 0
     path: Assets/Scenes/Biblioteca.unity
     guid: 11895e2777208624abb9ec005b75449e

@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -35,7 +36,7 @@ public class MenuController : MonoBehaviour
     {
         Time.timeScale = 1f;
         AudioManager.instance.StopAll();
-        SceneManager.LoadScene("Inicio");
+        SceneManager.LoadScene("Diario");
     }
 
     public void Options()
@@ -53,4 +54,9 @@ public class MenuController : MonoBehaviour
         pauseMenu.SetActive(true);
         OptionsMenu.SetActive(false);
     }
+    public void Jogar()
+    {
+        SceneManager.LoadScene("Diario");
+    }
+
 }

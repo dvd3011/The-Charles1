@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class book : MonoBehaviour
 {
     [SerializeField] float pageSpeed = 0.5f;
@@ -70,6 +70,31 @@ public class book : MonoBehaviour
             backButton.SetActive(false); //if the page is first then we turn off the back button
         }
     }
+    public void Fase1()
+    {
+        SceneManager.LoadScene("MapaAberto");
+    }
+    public void Fase2()
+    {
+        SceneManager.LoadScene("Fase2");
+
+    }
+    public void Fase3()
+    {
+        SceneManager.LoadScene("Fase3");
+
+    }
+    public void Fase4()
+    {
+        SceneManager.LoadScene("Fase4");
+
+    }
+    public void Fase5()
+    {
+        SceneManager.LoadScene("Fase5");
+
+    }
+
 
     IEnumerator Rotate(float angle, bool forward)
     {

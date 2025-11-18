@@ -2,6 +2,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
 using System.Collections;
+using UnityEngine.SceneManagement;
+
 public class InteractionsI : MonoBehaviour
 {
     [Header("UI References (assigned in inspector or dynamically)")]
@@ -74,6 +76,11 @@ public class InteractionsI : MonoBehaviour
 
     void Update()
     {
+        if(IsInScene("Fase5") && placar.sapoAtual>=2 && placar.beijaAtual>=2)
+        {
+                            SceneManager.LoadScene("Diario");
+
+        }
         anim.SetBool("Coletando", coletando);
 
         if (coletando == true)
@@ -405,6 +412,8 @@ public class InteractionsI : MonoBehaviour
             {
                 missaoCompletou = true;
                 missao3Ativa = false;
+                SceneManager.LoadScene("Diario");
+
             }
         }
     }
@@ -445,5 +454,9 @@ public class InteractionsI : MonoBehaviour
             img.color = cor;
         }
     }
-
+private bool IsInScene(string sceneName)
+    {
+        string currentSceneName = SceneManager.GetActiveScene().name;
+        return currentSceneName == sceneName;
+    }
 }

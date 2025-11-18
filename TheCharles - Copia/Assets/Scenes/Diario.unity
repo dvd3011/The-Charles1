@@ -413,7 +413,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 233792956}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 718776100}
+        m_TargetAssemblyTypeName: book, Assembly-CSharp
+        m_MethodName: Fase5
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &233792956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -610,7 +622,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 273464604}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 718776100}
+        m_TargetAssemblyTypeName: book, Assembly-CSharp
+        m_MethodName: Fase3
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &273464604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -799,7 +823,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 548032124}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 718776100}
+        m_TargetAssemblyTypeName: book, Assembly-CSharp
+        m_MethodName: Fase2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &548032124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -820,7 +856,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ed4bbf879c858f34b81496677e8e6673, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fddb73074edb873418b3468298015640, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1052,10 +1088,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f4b4c6e59af91d498fb8e2cc05fe43c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pageSpeed: 0.1
+  pageSpeed: 0.3
   pages:
-  - {fileID: 585191590}
   - {fileID: 1379086928}
+  - {fileID: 585191590}
+  - {fileID: 1164208884}
+  - {fileID: 1217069198}
+  - {fileID: 1782991679}
   backButton: {fileID: 1880552043}
   forwardButton: {fileID: 129494820}
 --- !u!1 &818446700
@@ -1216,7 +1255,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 837145613}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 718776100}
+        m_TargetAssemblyTypeName: book, Assembly-CSharp
+        m_MethodName: Fase4
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &837145613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1746,7 +1797,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1434162621}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 718776100}
+        m_TargetAssemblyTypeName: book, Assembly-CSharp
+        m_MethodName: Fase1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1434162621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1767,7 +1830,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: fddb73074edb873418b3468298015640, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ed4bbf879c858f34b81496677e8e6673, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

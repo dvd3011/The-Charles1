@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using UnityEngine.InputSystem;
 using System.Collections;
 using Unity.VisualScripting;
+using UnityEngine.SceneManagement;
 
 public enum PlayerState { Idle, Digging, Cleaning }
 
@@ -29,18 +30,18 @@ public class InteractionFase3 : MonoBehaviour
 
     private float currentHeat;
     private bool nearFire = false;
-       // Referência para o sprite do player
+       // Referï¿½ncia para o sprite do player
     private SpriteRenderer spriteRenderer;
     private Color baseColor; // cor original do sprite
     private Color coldColor = new Color(0.3f, 0.3f, 1f, 1f); // azul frio
 
-    // Lógica de Escavação (integrada)
-    [Header("Escavação Geral")]
+    // Lï¿½gica de Escavaï¿½ï¿½o (integrada)
+    [Header("Escavaï¿½ï¿½o Geral")]
     [SerializeField] private int digsRequired = 25; // Cliques em 'F' para completar (pode variar por site)
     private int currentDigs = 0;
     public PlayerState currentState = PlayerState.Idle;
-    private DigSite currentDigSite; // Referência ao site atual sendo escavado
-    private GameObject currentFossil; // CORREÇÃO: Variável de instância para escopo global (fóssil instanciado)
+    private DigSite currentDigSite; // Referï¿½ncia ao site atual sendo escavado
+    private GameObject currentFossil; // CORREï¿½ï¿½O: Variï¿½vel de instï¿½ncia para escopo global (fï¿½ssil instanciado)
     public GameObject minigameLimpezaObject;
     private SpawPoeira spoeira;
     public GameObject canvasMinigame;
@@ -69,6 +70,13 @@ public class InteractionFase3 : MonoBehaviour
 
     void Update()
     {
+        if(placar.fossilAtual>=4)
+        {
+            SceneManager.LoadScene("Diario");
+
+        }
+
+        
         // Gerenciamento de Calor (pausado durante Digging ou Cleaning)
         if (currentState == PlayerState.Idle)
         {
@@ -105,7 +113,7 @@ public class InteractionFase3 : MonoBehaviour
             StartCoroutine(StopCollectingAfterDelay(0.4f)); // Inicia a coroutine com um atraso de 1 segundo
         }
 
-        // Lógica de Escavação: Presses repetidos de 'F' durante Digging
+        // Lï¿½gica de Escavaï¿½ï¿½o: Presses repetidos de 'F' durante Digging
         if (currentState == PlayerState.Digging && Keyboard.current.fKey.wasPressedThisFrame)
         {
             Dig();
@@ -115,7 +123,7 @@ public class InteractionFase3 : MonoBehaviour
          if (currentState == PlayerState.Digging)
          {
              // Exemplo: placar.UpdateDigProgress(currentDigs, digsRequired); // Implemente no HudFase4 se quiser
-             anim.SetBool("Escavando", true); // Trigger animação de escavação (ajuste no Animator)
+             anim.SetBool("Escavando", true); // Trigger animaï¿½ï¿½o de escavaï¿½ï¿½o (ajuste no Animator)
          }
          else
          {
@@ -154,7 +162,7 @@ public class InteractionFase3 : MonoBehaviour
         {
             if (other.CompareTag("RegEscava"))
             {
-                // Inicia escavação se possível
+                // Inicia escavaï¿½ï¿½o se possï¿½vel
                 DigSite site = objetoAtual.GetComponent<DigSite>();
                 if (site != null && site.CanDig())
                 {
@@ -178,7 +186,7 @@ public class InteractionFase3 : MonoBehaviour
         apertouF = value.isPressed;
     }
 
-    // Método público para pausar/reativar movimento (chamado pelo FossilCleaning)
+    // Mï¿½todo pï¿½blico para pausar/reativar movimento (chamado pelo FossilCleaning)
     public void PausePlayerMovement(bool pause)
     {
         if (pl != null)
@@ -207,8 +215,8 @@ public class InteractionFase3 : MonoBehaviour
         UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
     }
 
-    // Métodos de Escavação
-    public bool CanDig() // Pode ser chamado externamente se necessário
+    // Mï¿½todos de Escavaï¿½ï¿½o
+    public bool CanDig() // Pode ser chamado externamente se necessï¿½rio
     {
         return currentDigSite != null && !currentDigSite.isDiscovered;
     }
@@ -221,8 +229,8 @@ public class InteractionFase3 : MonoBehaviour
         currentDigSite = site;
         currentDigs = 0;
         digsRequired = site.digsRequired; // Usa o valor do site (pode variar)
-        pl.enabled = false; // Pausa movimento, similar à coleta
-        Debug.Log("Iniciando escavação...");
+        pl.enabled = false; // Pausa movimento, similar ï¿½ coleta
+        Debug.Log("Iniciando escavaï¿½ï¿½o...");
         if (minigameLimpezaObject != null)
         {
             minigameLimpezaObject.SetActive(false);
@@ -233,18 +241,18 @@ public class InteractionFase3 : MonoBehaviour
             fossil4.SetActive(false);
 
         }
-        // Opcional: Ative partículas de neve ou UI de progresso aqui
+        // Opcional: Ative partï¿½culas de neve ou UI de progresso aqui
     }
    
 
-    public void Dig() // Chamado a cada pressão de 'F' durante Digging
+    public void Dig() // Chamado a cada pressï¿½o de 'F' durante Digging
     {
         if (currentState != PlayerState.Digging || currentDigSite == null) return;
 
         currentDigs++;
         Debug.Log("Escavando... Progresso: " + currentDigs + "/" + digsRequired);
 
-        // --- NOVA LÓGICA: VERIFICAR FIM DA ESCAVAÇÃO ---
+        // --- NOVA Lï¿½GICA: VERIFICAR FIM DA ESCAVAï¿½ï¿½O ---
         if (currentDigs >= digsRequired)
         {
             CompleteDigging();
@@ -253,7 +261,7 @@ public class InteractionFase3 : MonoBehaviour
     }
     void CompleteDigging()
     {
-        Debug.Log("Escavação concluída! Iniciando limpeza...");
+        Debug.Log("Escavaï¿½ï¿½o concluï¿½da! Iniciando limpeza...");
 
         // Marca o site como descoberto
         if (currentDigSite != null)
@@ -285,13 +293,13 @@ public class InteractionFase3 : MonoBehaviour
             {
                 fossil4.SetActive(true);
             }
-            // REMOVA esta linha, pois o spawn já acontece no OnEnable() do SpawPoeira.cs
+            // REMOVA esta linha, pois o spawn jï¿½ acontece no OnEnable() do SpawPoeira.cs
             // spoeira.SpawnarPoeira(); 
         }
     }
     public void FinishCleaning()
     {
-        Debug.Log("Limpeza Concluída!");
+        Debug.Log("Limpeza Concluï¿½da!");
 
         // Desativa o minigame
         if (minigameLimpezaObject != null)
@@ -313,7 +321,7 @@ public class InteractionFase3 : MonoBehaviour
         currentState = PlayerState.Idle;
         pl.enabled = true; // Reativa movimento
 
-        // Aqui você pode instanciar o prêmio/fóssil final
+        // Aqui vocï¿½ pode instanciar o prï¿½mio/fï¿½ssil final
         // Instantiate(currentDigSite.fossilPrefab, ...);
     }
 

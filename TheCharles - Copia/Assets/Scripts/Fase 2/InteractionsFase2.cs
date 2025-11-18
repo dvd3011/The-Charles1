@@ -1,9 +1,10 @@
-
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
 using System.Collections;
 using Unity.VisualScripting;
+using UnityEngine.SceneManagement;
+
 public class InteractionsFase2 : MonoBehaviour
 {
     [Header("UI References (assigned in inspector or dynamically)")]
@@ -280,7 +281,8 @@ public class InteractionsFase2 : MonoBehaviour
         }
         if (missao == 7)
         {
-            Time.timeScale = 0;
+            SceneManager.LoadScene("Diario");
+
         }
 
     }

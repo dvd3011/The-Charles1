@@ -1,9 +1,10 @@
-
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
 using System.Collections;
 using Unity.VisualScripting;
+using UnityEngine.SceneManagement;
+
 public class InteractionsFase4 : MonoBehaviour
 {
     [Header("UI References (assigned in inspector or dynamically)")]
@@ -281,7 +282,7 @@ public class InteractionsFase4 : MonoBehaviour
 
             if (placar.tentilhaoAtual>=2)
             {
-                Time.timeScale = 0;
+                SceneManager.LoadScene("Diario");
             }
         }
     
