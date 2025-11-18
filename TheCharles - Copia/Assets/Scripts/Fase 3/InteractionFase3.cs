@@ -19,7 +19,7 @@ public class InteractionFase3 : MonoBehaviour
     public GameObject android;
     public int missao;
     public GameObject objMissao1, objMissao2;
-    public GameObject canvaMissao1, canvaMissao21, canvaMissao31, canvaMissao2, canvaMissao3;
+    public GameObject fossil1, fossil2, fossil3, fossil4;
     float timer;
     bool comecaTimer;
     [SerializeField] private float maxHeat = 100f;
@@ -44,9 +44,11 @@ public class InteractionFase3 : MonoBehaviour
     public GameObject minigameLimpezaObject;
     private SpawPoeira spoeira;
     public GameObject canvasMinigame;
+    public FadeController fadeController;
+
     void Awake()
     {
-        currentHeat = maxHeat;
+        currentHeat = maxHeat;  
         spoeira = FindObjectOfType<SpawPoeira>();
         if (Application.platform == RuntimePlatform.Android)
         {
@@ -142,6 +144,7 @@ public class InteractionFase3 : MonoBehaviour
             {
             }
         }
+        
     }
 
     private void OnTriggerStay2D(Collider2D other)
@@ -224,6 +227,10 @@ public class InteractionFase3 : MonoBehaviour
         {
             minigameLimpezaObject.SetActive(false);
             canvasMinigame.SetActive(false);
+            fossil1.SetActive(false);
+            fossil2.SetActive(false);
+            fossil3.SetActive(false);
+            fossil4.SetActive(false);
 
         }
         // Opcional: Ative partículas de neve ou UI de progresso aqui
@@ -262,7 +269,22 @@ public class InteractionFase3 : MonoBehaviour
         {
             minigameLimpezaObject.SetActive(true);
             canvasMinigame.SetActive(true);
-
+            if (placar.fossilAtual == 0)
+            {
+                fossil1.SetActive(true);
+            }
+            if (placar.fossilAtual == 1)
+            {
+                fossil2.SetActive(true);
+            }
+            if (placar.fossilAtual == 2)
+            {
+                fossil3.SetActive(true);
+            }
+            if (placar.fossilAtual == 3)
+            {
+                fossil4.SetActive(true);
+            }
             // REMOVA esta linha, pois o spawn já acontece no OnEnable() do SpawPoeira.cs
             // spoeira.SpawnarPoeira(); 
         }
@@ -276,6 +298,12 @@ public class InteractionFase3 : MonoBehaviour
         {
             minigameLimpezaObject.SetActive(false);
             canvasMinigame.SetActive(false);
+            fadeController.StartFade(objetoAtual, 2f, true);
+
+            Destroy(objetoAtual);
+            placar.PlacarFossil(1);
+            coletando = true;
+           
 
         }
 
