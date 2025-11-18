@@ -10,16 +10,25 @@ public class Neve : MonoBehaviour
 
     private Vector2 telaMax;
     private float[] velocidades;
-
+    public RectTransform PrefabFlocoDeNeve; // 
+    public int quantidadeFlocos = 25; // 
+    private List<RectTransform> flocos; //
     void Start()
     {
         Canvas canvas = FindObjectOfType<Canvas>();
         RectTransform canvasRect = canvas.GetComponent<RectTransform>();
         telaMax = canvasRect.rect.size;
 
-        velocidades = new float[imagens.Length];
-        for (int i = 0; i < imagens.Length; i++)
+        flocos = new List<RectTransform>(); // Inicializa a lista
+        velocidades = new float[quantidadeFlocos]; // Define o array de velocidades
+
+        for (int i = 0; i < quantidadeFlocos; i++)
         {
+            // Instancia o novo floco
+            RectTransform newFloco = Instantiate(PrefabFlocoDeNeve, transform);
+            flocos.Add(newFloco);
+
+            // Note que agora o índice 'i' corresponde ao índice na lista 'flocos' e 'velocidades'
             ResetarImagem(i);
         }
     }
@@ -40,8 +49,17 @@ public class Neve : MonoBehaviour
     void ResetarImagem(int i)
     {
         velocidades[i] = Random.Range(velocidadeMin, velocidadeMax);
-        float x = Random.Range(0, telaMax.x);
-        float y = telaMax.y + Random.Range(50f, 200f);
+
+        // --- NOVO CÁLCULO X: PARA CENTRALIZAR O SPAWN ---
+        // Random.Range(-telaMax.x / 2) garante que o floco nasce na metade esquerda
+        // e (telaMax.x / 2) garante que o floco nasce na metade direita.
+        float x = Random.Range(-telaMax.x / 2, telaMax.x / 2);
+
+        // --- CÁLCULO Y: SPAWN ACIMA DA TELA ---
+        // telaMax.y / 2 é o topo da tela. 
+        // Adicionar um valor garante que o floco comece fora da tela (acima).
+        float y = (telaMax.y / 2);
+
         imagens[i].anchoredPosition = new Vector2(x, y);
     }
 }

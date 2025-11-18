@@ -45,6 +45,7 @@ public class InteractionFase3 : MonoBehaviour
     private SpawPoeira spoeira;
     public GameObject canvasMinigame;
     public FadeController fadeController;
+    public CollectFeedBack fb;
 
     void Awake()
     {
@@ -296,15 +297,15 @@ public class InteractionFase3 : MonoBehaviour
         // Desativa o minigame
         if (minigameLimpezaObject != null)
         {
-            minigameLimpezaObject.SetActive(false);
-            canvasMinigame.SetActive(false);
-            fadeController.StartFade(objetoAtual, 2f, true);
 
             Destroy(objetoAtual);
+            fb.ShowFeedback("+1 Fossil", Color.yellow);
+            gameObject.GetComponent<BoxCollider2D>().enabled = false;
             placar.PlacarFossil(1);
             coletando = true;
-           
-
+            
+            minigameLimpezaObject.SetActive(false);
+            canvasMinigame.SetActive(false);
         }
 
         // Retorna o jogador ao estado normal
