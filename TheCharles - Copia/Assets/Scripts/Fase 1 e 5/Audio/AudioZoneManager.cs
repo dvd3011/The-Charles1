@@ -7,12 +7,16 @@ public class AudioZoneManager : MonoBehaviour
     {
         public string nome;
         public AudioZone.AmbienteTipo tipoAmbiente;
-        public Transform center; 
+        public Transform center;
         public Vector3 size = new Vector3(5, 5, 5);
     }
 
     public Transform player;
     public AmbienteArea[] ambientes;
+
+    public GameObject objBG;
+    public GameObject objMusic;
+    public GameObject objWalla;
 
     private AudioZone.AmbienteTipo ambienteAtual;
 
@@ -32,7 +36,6 @@ public class AudioZoneManager : MonoBehaviour
             }
         }
 
-        // Player fora de todos os ambientes
         if (ambienteAtual != 0)
         {
             ambienteAtual = 0;
@@ -54,29 +57,34 @@ public class AudioZoneManager : MonoBehaviour
         switch (tipo)
         {
             case AudioZone.AmbienteTipo.Ambiente1:
-                AudioManager.instance.SetBGVolume(0f);
-                AudioManager.instance.SetMXVolume(1f);
-                AudioManager.instance.SetWallafxVolume(0f);
+                objBG.SetActive(false);
+                objWalla.SetActive(false);
+                objMusic.SetActive(true);
                 break;
 
             case AudioZone.AmbienteTipo.Ambiente2:
-                AudioManager.instance.SetBGVolume(0f);
-                AudioManager.instance.SetMXVolume(1f);
-                AudioManager.instance.SetWallafxVolume(0f);
+                objBG.SetActive(false);
+                objWalla.SetActive(false);
+                objMusic.SetActive(true);
                 break;
 
             case AudioZone.AmbienteTipo.Ambiente3:
-                AudioManager.instance.SetBGVolume(1f);
-                AudioManager.instance.SetMXVolume(1f);
-                AudioManager.instance.SetWallafxVolume(0f);
+                objBG.SetActive(true);
+                objWalla.SetActive(false);
+                objMusic.SetActive(true);
                 break;
 
             case AudioZone.AmbienteTipo.Ambiente4:
-                AudioManager.instance.SetBGVolume(0f);
-                AudioManager.instance.SetMXVolume(0.5f);
-                AudioManager.instance.SetWallafxVolume(1f); // toca wallafx
+                objBG.SetActive(false);
+                objMusic.SetActive(false);
+                objWalla.SetActive(true);
                 break;
         }
+    }
+
+    public void ReaplicarAmbiente()
+    {
+        AplicarAmbiente(ambienteAtual);
     }
 
     private void OnDrawGizmosSelected()

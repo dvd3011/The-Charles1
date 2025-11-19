@@ -126,7 +126,6 @@ public class AudioManager : MonoBehaviour
     // PAUSAR
     public void PauseAll()
     {
-        if (musicEventInstance.isValid()) musicEventInstance.setPaused(true);
         if (backgEventInstance.isValid()) backgEventInstance.setPaused(true);
         if (wallafxEventInstance.isValid()) wallafxEventInstance.setPaused(true);
 
@@ -137,7 +136,6 @@ public class AudioManager : MonoBehaviour
     // RETOMAR
     public void ResumeAll()
     {
-        if (musicEventInstance.isValid()) musicEventInstance.setPaused(false);
         if (backgEventInstance.isValid()) backgEventInstance.setPaused(false);
         if (wallafxEventInstance.isValid()) wallafxEventInstance.setPaused(false);
 
