@@ -164,10 +164,10 @@ MonoBehaviour:
   Path: SonsCharles/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638990949537195850
+  lastModified: 638991047756489311
   FileSizes:
   - Name: Desktop
-    Value: 2198
+    Value: 2236
   Exists: 1
 --- !u!114 &-4884047050828164566
 MonoBehaviour:
@@ -510,13 +510,14 @@ MonoBehaviour:
   - {fileID: 6444901416774629285}
   - {fileID: 6385741639024833661}
   - {fileID: 301958148967925468}
+  - {fileID: 2302226639943202787}
   EditorParameters: []
   MasterBanks:
   - {fileID: 8473532763289993518}
   StringsBanks:
   - {fileID: -5389170231698843960}
   cacheVersion: 131847
-  cacheTime: 638990949537275633
+  cacheTime: 638991047756489311
   SerializableEventsDict:
   - key: event:/BG/Mato
     index: 0
@@ -574,6 +575,8 @@ MonoBehaviour:
     index: 26
   - key: event:/MX/Charles
     index: 27
+  - key: "event:/MX/Di\xE1rio"
+    index: 28
 --- !u!114 &301958148967925468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -621,6 +624,33 @@ MonoBehaviour:
   - Name: Desktop
     Value: 506
   Exists: 1
+--- !u!114 &2302226639943202787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/MX/Di\xE1rio"
+  m_EditorClassIdentifier: 
+  Path: "event:/MX/Di\xE1rio"
+  Guid:
+    Data1: 1382291477
+    Data2: 1120458130
+    Data3: -1269326434
+    Data4: -777613629
+  Banks:
+  - {fileID: 8473532763289993518}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 109714
 --- !u!114 &3642070139731799837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1009,8 +1039,8 @@ MonoBehaviour:
   Path: SonsCharles/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638990949537175906
+  lastModified: 638991047756479383
   FileSizes:
   - Name: Desktop
-    Value: 1199840
+    Value: 2063904
   Exists: 1
