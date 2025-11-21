@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8439205404371040124
+--- !u!114 &-8590457205038861783
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,178 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/FS/FootstepSNW
+  m_Name: event:/MX/Final
   m_EditorClassIdentifier: 
-  Path: event:/FS/FootstepSNW
+  Path: event:/MX/Final
   Guid:
-    Data1: 954293757
-    Data2: 1244320286
-    Data3: -407115362
-    Data4: -1873975858
+    Data1: -902541881
+    Data2: 1156599276
+    Data3: 188275646
+    Data4: -1216957671
   Banks:
-  - {fileID: 7514287038726034175}
+  - {fileID: -7828441558520997327}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1000
---- !u!114 &-7911561493221667766
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/MX/Rio
-  m_EditorClassIdentifier: 
-  Path: event:/MX/Rio
-  Guid:
-    Data1: 2011141323
-    Data2: 1101111598
-    Data3: -969963594
-    Data4: 1909547600
-  Banks:
-  - {fileID: -229161913500178141}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 134000
---- !u!114 &-7707755577822599126
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BG/RioSom
-  m_EditorClassIdentifier: 
-  Path: event:/BG/RioSom
-  Guid:
-    Data1: 1571538007
-    Data2: 1074989945
-    Data3: -1359830606
-    Data4: -42363996
-  Banks:
-  - {fileID: -6345083789240468230}
-  - {fileID: -229161913500178141}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 97497
---- !u!114 &-7574401744478301364
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BG/Foguin
-  m_EditorClassIdentifier: 
-  Path: event:/BG/Foguin
-  Guid:
-    Data1: 1871690228
-    Data2: 1319441255
-    Data3: 245368250
-    Data4: 737774096
-  Banks:
-  - {fileID: 7514287038726034175}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 130212
---- !u!114 &-7193410678048703195
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Fase4.bank
-  m_EditorClassIdentifier: 
-  Path: SonsCharles/Build/Desktop/Fase4.bank
-  Name: Fase4
-  StudioPath: bank:/Fase4
-<<<<<<< Updated upstream
-  lastModified: 638990949527322881
-=======
-  lastModified: 638989904434544410
->>>>>>> Stashed changes
-  FileSizes:
-  - Name: Desktop
-    Value: 3682368
-  Exists: 1
---- !u!114 &-6345083789240468230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Fase1.bank
-  m_EditorClassIdentifier: 
-  Path: SonsCharles/Build/Desktop/Fase1.bank
-  Name: Fase1
-  StudioPath: bank:/Fase1
-<<<<<<< Updated upstream
-  lastModified: 638990949491813861
-=======
-  lastModified: 638989904431744357
->>>>>>> Stashed changes
-  FileSizes:
-  - Name: Desktop
-    Value: 15435232
-  Exists: 1
---- !u!114 &-5389170231698843960
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: SonsCharles/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-<<<<<<< Updated upstream
-  lastModified: 638991047756489311
-=======
-  lastModified: 638989904434624388
->>>>>>> Stashed changes
-  FileSizes:
-  - Name: Desktop
-    Value: 2236
-  Exists: 1
---- !u!114 &-4884047050828164566
+  Length: 153600
+--- !u!114 &-8451429227580495291
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -200,7 +46,7 @@ MonoBehaviour:
     Data3: -556012406
     Data4: -841727130
   Banks:
-  - {fileID: -6345083789240468230}
+  - {fileID: -7828441558520997327}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -208,249 +54,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3300
---- !u!114 &-4180850595372311981
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/HFX/Macacao
-  m_EditorClassIdentifier: 
-  Path: event:/HFX/Macacao
-  Guid:
-    Data1: 24018953
-    Data2: 1190963210
-    Data3: 979855802
-    Data4: -1766411768
-  Banks:
-  - {fileID: -6345083789240468230}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 37000
---- !u!114 &-4151835689827534888
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/HFX/Tent2
-  m_EditorClassIdentifier: 
-  Path: event:/HFX/Tent2
-  Guid:
-    Data1: 1397442988
-    Data2: 1184759687
-    Data3: 1608215970
-    Data4: -1293471448
-  Banks:
-  - {fileID: -7193410678048703195}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 17000
---- !u!114 &-4138011885923188789
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Coleta
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Coleta
-  Guid:
-    Data1: 1750669162
-    Data2: 1227156313
-    Data3: -401163883
-    Data4: -1411797624
-  Banks:
-  - {fileID: -6345083789240468230}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 523
---- !u!114 &-4039303193974955470
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/MX/Cambridge
-  m_EditorClassIdentifier: 
-  Path: event:/MX/Cambridge
-  Guid:
-    Data1: 32870665
-    Data2: 1138486481
-    Data3: -646636364
-    Data4: -2104201011
-  Banks:
-  - {fileID: -6345083789240468230}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 130000
---- !u!114 &-3176517845614642407
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BG/MatoNaIlha
-  m_EditorClassIdentifier: 
-  Path: event:/BG/MatoNaIlha
-  Guid:
-    Data1: -1174329967
-    Data2: 1277606730
-    Data3: -1970338930
-    Data4: 1524209542
-  Banks:
-  - {fileID: -6345083789240468230}
-  - {fileID: -7193410678048703195}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 218120
---- !u!114 &-1702445206806208599
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BG/Walla
-  m_EditorClassIdentifier: 
-  Path: event:/BG/Walla
-  Guid:
-    Data1: 1256582799
-    Data2: 1177350046
-    Data3: 214152115
-    Data4: -417796198
-  Banks:
-  - {fileID: -6345083789240468230}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 56600
---- !u!114 &-1695257041630411029
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/DocInt
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/DocInt
-  Guid:
-    Data1: -1405621133
-    Data2: 1217490906
-    Data3: 758141616
-    Data4: 897758579
-  Banks:
-  - {fileID: -6345083789240468230}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 450
---- !u!114 &-1174862034059751738
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BG/Patagos
-  m_EditorClassIdentifier: 
-  Path: event:/BG/Patagos
-  Guid:
-    Data1: 2073781286
-    Data2: 1118174957
-    Data3: 690875036
-    Data4: -1608070720
-  Banks:
-  - {fileID: -6345083789240468230}
-  - {fileID: 7514287038726034175}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 180000
---- !u!114 &-229161913500178141
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Fase2.bank
-  m_EditorClassIdentifier: 
-  Path: SonsCharles/Build/Desktop/Fase2.bank
-  Name: Fase2
-  StudioPath: bank:/Fase2
-<<<<<<< Updated upstream
-  lastModified: 638990949503948964
-=======
-  lastModified: 638989904432424363
->>>>>>> Stashed changes
-  FileSizes:
-  - Name: Desktop
-    Value: 2500896
-  Exists: 1
---- !u!114 &-161648180200443797
+--- !u!114 &-7866920246664834134
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -469,7 +73,7 @@ MonoBehaviour:
     Data3: 356564149
     Data4: 483642434
   Banks:
-  - {fileID: -6345083789240468230}
+  - {fileID: -7828441558520997327}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -477,6 +81,412 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5500
+--- !u!114 &-7828441558520997327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Fase1.bank
+  m_EditorClassIdentifier: 
+  Path: SonsCharles/Build/Desktop/Fase1.bank
+  Name: Fase1
+  StudioPath: bank:/Fase1
+  lastModified: 638989904431744357
+  FileSizes:
+  - Name: Desktop
+    Value: 15435232
+  Exists: 1
+--- !u!114 &-7391552366113909876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FS/FootstepSNW
+  m_EditorClassIdentifier: 
+  Path: event:/FS/FootstepSNW
+  Guid:
+    Data1: 954293757
+    Data2: 1244320286
+    Data3: -407115362
+    Data4: -1873975858
+  Banks:
+  - {fileID: 5791513391459363639}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
+--- !u!114 &-7353828455304777007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/HFX/Macacao
+  m_EditorClassIdentifier: 
+  Path: event:/HFX/Macacao
+  Guid:
+    Data1: 24018953
+    Data2: 1190963210
+    Data3: 979855802
+    Data4: -1766411768
+  Banks:
+  - {fileID: -7828441558520997327}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 37000
+--- !u!114 &-6800938857442032791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MX/Patagas
+  m_EditorClassIdentifier: 
+  Path: event:/MX/Patagas
+  Guid:
+    Data1: 963006389
+    Data2: 1191035437
+    Data3: -276156018
+    Data4: -833988408
+  Banks:
+  - {fileID: 5791513391459363639}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 116200
+--- !u!114 &-6140712387973695632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Captura
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Captura
+  Guid:
+    Data1: 215225732
+    Data2: 1135376588
+    Data3: 1790444982
+    Data4: 252257186
+  Banks:
+  - {fileID: -7828441558520997327}
+  - {fileID: -1142899292140392209}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 188
+--- !u!114 &-5937414917464355655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BG/Mato
+  m_EditorClassIdentifier: 
+  Path: event:/BG/Mato
+  Guid:
+    Data1: -1321348092
+    Data2: 1202294642
+    Data3: -352604483
+    Data4: 1611090424
+  Banks:
+  - {fileID: -7828441558520997327}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 303515
+--- !u!114 &-4605076113256908305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MX/Pausa
+  m_EditorClassIdentifier: 
+  Path: event:/MX/Pausa
+  Guid:
+    Data1: -2047865817
+    Data2: 1282967976
+    Data3: 1006009
+    Data4: -39491933
+  Banks:
+  - {fileID: 3993171476539259066}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 63829
+--- !u!114 &-4006992719585955526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/HFX/Sapo
+  m_EditorClassIdentifier: 
+  Path: event:/HFX/Sapo
+  Guid:
+    Data1: -2011007291
+    Data2: 1176715013
+    Data3: 786469010
+    Data4: 1445894569
+  Banks:
+  - {fileID: -7828441558520997327}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 15500
+--- !u!114 &-3968668500898850911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MX/Cambridge
+  m_EditorClassIdentifier: 
+  Path: event:/MX/Cambridge
+  Guid:
+    Data1: 32870665
+    Data2: 1138486481
+    Data3: -646636364
+    Data4: -2104201011
+  Banks:
+  - {fileID: -7828441558520997327}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 130000
+--- !u!114 &-3531920492555940924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Typing
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Typing
+  Guid:
+    Data1: 1675886290
+    Data2: 1327521727
+    Data3: -1108384639
+    Data4: 563738075
+  Banks:
+  - {fileID: -7828441558520997327}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 16000
+--- !u!114 &-1649406038221836572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Porta
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Porta
+  Guid:
+    Data1: 836572625
+    Data2: 1303562765
+    Data3: 810065067
+    Data4: -2114108775
+  Banks:
+  - {fileID: -7828441558520997327}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1789
+--- !u!114 &-1603766768497067536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SFX.bank
+  m_EditorClassIdentifier: 
+  Path: SonsCharles/Build/Desktop/SFX.bank
+  Name: SFX
+  StudioPath: bank:/SFX
+  lastModified: 638989904434644393
+  FileSizes:
+  - Name: Desktop
+    Value: 506
+  Exists: 1
+--- !u!114 &-1369637020054535564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Coleta
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Coleta
+  Guid:
+    Data1: 1750669162
+    Data2: 1227156313
+    Data3: -401163883
+    Data4: -1411797624
+  Banks:
+  - {fileID: -7828441558520997327}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 523
+--- !u!114 &-1261898522022967840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/HFX/Tent1
+  m_EditorClassIdentifier: 
+  Path: event:/HFX/Tent1
+  Guid:
+    Data1: 617196009
+    Data2: 1173937639
+    Data3: -1864381551
+    Data4: 1600544495
+  Banks:
+  - {fileID: -7828441558520997327}
+  - {fileID: 2777881967812672783}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 20115
+--- !u!114 &-1142899292140392209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Fase2.bank
+  m_EditorClassIdentifier: 
+  Path: SonsCharles/Build/Desktop/Fase2.bank
+  Name: Fase2
+  StudioPath: bank:/Fase2
+  lastModified: 638989904432424363
+  FileSizes:
+  - Name: Desktop
+    Value: 2500896
+  Exists: 1
+--- !u!114 &-574213385213160692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: SonsCharles/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638992651728791346
+  FileSizes:
+  - Name: Desktop
+    Value: 2236
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -490,54 +500,50 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -5389170231698843960}
-  - {fileID: -6345083789240468230}
-  - {fileID: -229161913500178141}
-  - {fileID: 7514287038726034175}
-  - {fileID: -7193410678048703195}
-  - {fileID: 8473532763289993518}
-  - {fileID: 2230988396097752691}
+  - {fileID: -574213385213160692}
+  - {fileID: -7828441558520997327}
+  - {fileID: -1142899292140392209}
+  - {fileID: 5791513391459363639}
+  - {fileID: 2777881967812672783}
+  - {fileID: 3993171476539259066}
+  - {fileID: -1603766768497067536}
   EditorEvents:
-  - {fileID: 7627018867365013082}
-  - {fileID: -4180850595372311981}
-  - {fileID: -4039303193974955470}
-  - {fileID: -1174862034059751738}
-  - {fileID: 6347665748539602139}
-  - {fileID: -7707755577822599126}
-  - {fileID: -4138011885923188789}
-  - {fileID: -1695257041630411029}
-  - {fileID: 3642070139731799837}
-  - {fileID: -1702445206806208599}
-  - {fileID: -3176517845614642407}
-  - {fileID: -161648180200443797}
-  - {fileID: 7053924432093811785}
-  - {fileID: 4630028468997783538}
-  - {fileID: 4415433565392783967}
-  - {fileID: 5183984466073778347}
-  - {fileID: 4479099916303466659}
-  - {fileID: -4884047050828164566}
-  - {fileID: 7377578174754905411}
-  - {fileID: -7911561493221667766}
-  - {fileID: 6395429068223368916}
-  - {fileID: -7574401744478301364}
-  - {fileID: -8439205404371040124}
-  - {fileID: 5685282686405719812}
-  - {fileID: -4151835689827534888}
-  - {fileID: 6444901416774629285}
-  - {fileID: 6385741639024833661}
-  - {fileID: 301958148967925468}
-  - {fileID: 2302226639943202787}
+  - {fileID: -5937414917464355655}
+  - {fileID: -7353828455304777007}
+  - {fileID: -3968668500898850911}
+  - {fileID: 8725121925060903983}
+  - {fileID: 6174583648976346945}
+  - {fileID: 4292630165646581275}
+  - {fileID: -1369637020054535564}
+  - {fileID: 7329080094356827121}
+  - {fileID: -6140712387973695632}
+  - {fileID: 91453860390328338}
+  - {fileID: 3889644869743686610}
+  - {fileID: -7866920246664834134}
+  - {fileID: -4006992719585955526}
+  - {fileID: -8590457205038861783}
+  - {fileID: -1649406038221836572}
+  - {fileID: -3531920492555940924}
+  - {fileID: -1261898522022967840}
+  - {fileID: -8451429227580495291}
+  - {fileID: 910655126843967124}
+  - {fileID: 8405567438508597030}
+  - {fileID: -6800938857442032791}
+  - {fileID: 562023363787053420}
+  - {fileID: -7391552366113909876}
+  - {fileID: 7414632050497077875}
+  - {fileID: 1213623243179789210}
+  - {fileID: 6529908141853821772}
+  - {fileID: 123319668973543584}
+  - {fileID: -4605076113256908305}
+  - {fileID: 3045514981332097842}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 8473532763289993518}
+  - {fileID: 3993171476539259066}
   StringsBanks:
-  - {fileID: -5389170231698843960}
+  - {fileID: -574213385213160692}
   cacheVersion: 131847
-<<<<<<< Updated upstream
-  cacheTime: 638991047756489311
-=======
-  cacheTime: 638989904434644393
->>>>>>> Stashed changes
+  cacheTime: 638992651728791346
   SerializableEventsDict:
   - key: event:/BG/Mato
     index: 0
@@ -591,13 +597,13 @@ MonoBehaviour:
     index: 24
   - key: event:/HFX/Tent3
     index: 25
-  - key: event:/MX/Pausa
-    index: 26
-  - key: event:/MX/Charles
-    index: 27
   - key: "event:/MX/Di\xE1rio"
+    index: 26
+  - key: event:/MX/Pausa
+    index: 27
+  - key: event:/MX/Charles
     index: 28
---- !u!114 &301958148967925468
+--- !u!114 &91453860390328338
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -607,48 +613,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/MX/Charles
+  m_Name: event:/BG/Walla
   m_EditorClassIdentifier: 
-  Path: event:/MX/Charles
+  Path: event:/BG/Walla
   Guid:
-    Data1: 1343232621
-    Data2: 1269989999
-    Data3: -568493159
-    Data4: -1601149700
+    Data1: 1256582799
+    Data2: 1177350046
+    Data3: 214152115
+    Data4: -417796198
   Banks:
-  - {fileID: 8473532763289993518}
+  - {fileID: -7828441558520997327}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 51200
---- !u!114 &2230988396097752691
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/SFX.bank
-  m_EditorClassIdentifier: 
-  Path: SonsCharles/Build/Desktop/SFX.bank
-  Name: SFX
-  StudioPath: bank:/SFX
-<<<<<<< Updated upstream
-  lastModified: 638990949537275633
-=======
-  lastModified: 638989904434644393
->>>>>>> Stashed changes
-  FileSizes:
-  - Name: Desktop
-    Value: 506
-  Exists: 1
---- !u!114 &2302226639943202787
+  Length: 56600
+--- !u!114 &123319668973543584
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -667,7 +649,7 @@ MonoBehaviour:
     Data3: -1269326434
     Data4: -777613629
   Banks:
-  - {fileID: 8473532763289993518}
+  - {fileID: 3993171476539259066}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -675,7 +657,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 109714
---- !u!114 &3642070139731799837
+--- !u!114 &562023363787053420
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -685,296 +667,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Captura
+  m_Name: event:/BG/Foguin
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Captura
+  Path: event:/BG/Foguin
   Guid:
-    Data1: 215225732
-    Data2: 1135376588
-    Data3: 1790444982
-    Data4: 252257186
+    Data1: 1871690228
+    Data2: 1319441255
+    Data3: 245368250
+    Data4: 737774096
   Banks:
-  - {fileID: -6345083789240468230}
-  - {fileID: -229161913500178141}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 188
---- !u!114 &4415433565392783967
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Porta
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Porta
-  Guid:
-    Data1: 836572625
-    Data2: 1303562765
-    Data3: 810065067
-    Data4: -2114108775
-  Banks:
-  - {fileID: -6345083789240468230}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1789
---- !u!114 &4479099916303466659
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/HFX/Tent1
-  m_EditorClassIdentifier: 
-  Path: event:/HFX/Tent1
-  Guid:
-    Data1: 617196009
-    Data2: 1173937639
-    Data3: -1864381551
-    Data4: 1600544495
-  Banks:
-  - {fileID: -6345083789240468230}
-  - {fileID: -7193410678048703195}
+  - {fileID: 5791513391459363639}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 20115
---- !u!114 &4630028468997783538
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/MX/Final
-  m_EditorClassIdentifier: 
-  Path: event:/MX/Final
-  Guid:
-    Data1: -902541881
-    Data2: 1156599276
-    Data3: 188275646
-    Data4: -1216957671
-  Banks:
-  - {fileID: -6345083789240468230}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 153600
---- !u!114 &5183984466073778347
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Typing
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Typing
-  Guid:
-    Data1: 1675886290
-    Data2: 1327521727
-    Data3: -1108384639
-    Data4: 563738075
-  Banks:
-  - {fileID: -6345083789240468230}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 16000
---- !u!114 &5685282686405719812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/MX/Ilhas
-  m_EditorClassIdentifier: 
-  Path: event:/MX/Ilhas
-  Guid:
-    Data1: -1840459920
-    Data2: 1101476659
-    Data3: -764292938
-    Data4: 971411548
-  Banks:
-  - {fileID: -7193410678048703195}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 69818
---- !u!114 &6347665748539602139
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Intera
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Intera
-  Guid:
-    Data1: 362500946
-    Data2: 1235281143
-    Data3: 1369808531
-    Data4: -636996551
-  Banks:
-  - {fileID: -6345083789240468230}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 465
---- !u!114 &6385741639024833661
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/MX/Pausa
-  m_EditorClassIdentifier: 
-  Path: event:/MX/Pausa
-  Guid:
-    Data1: -2047865817
-    Data2: 1282967976
-    Data3: 1006009
-    Data4: -39491933
-  Banks:
-  - {fileID: 8473532763289993518}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 63829
---- !u!114 &6395429068223368916
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/MX/Patagas
-  m_EditorClassIdentifier: 
-  Path: event:/MX/Patagas
-  Guid:
-    Data1: 963006389
-    Data2: 1191035437
-    Data3: -276156018
-    Data4: -833988408
-  Banks:
-  - {fileID: 7514287038726034175}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 116200
---- !u!114 &6444901416774629285
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/HFX/Tent3
-  m_EditorClassIdentifier: 
-  Path: event:/HFX/Tent3
-  Guid:
-    Data1: -501885774
-    Data2: 1284348709
-    Data3: 1567995022
-    Data4: -999320784
-  Banks:
-  - {fileID: -7193410678048703195}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 27768
---- !u!114 &7053924432093811785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/HFX/Sapo
-  m_EditorClassIdentifier: 
-  Path: event:/HFX/Sapo
-  Guid:
-    Data1: -2011007291
-    Data2: 1176715013
-    Data3: 786469010
-    Data4: 1445894569
-  Banks:
-  - {fileID: -6345083789240468230}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 15500
---- !u!114 &7377578174754905411
+  Length: 130212
+--- !u!114 &910655126843967124
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -993,7 +703,7 @@ MonoBehaviour:
     Data3: -1661580112
     Data4: -264729162
   Banks:
-  - {fileID: -229161913500178141}
+  - {fileID: -1142899292140392209}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1001,31 +711,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 259
---- !u!114 &7514287038726034175
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Fase3.bank
-  m_EditorClassIdentifier: 
-  Path: SonsCharles/Build/Desktop/Fase3.bank
-  Name: Fase3
-  StudioPath: bank:/Fase3
-<<<<<<< Updated upstream
-  lastModified: 638990949515772362
-=======
-  lastModified: 638989904433744358
->>>>>>> Stashed changes
-  FileSizes:
-  - Name: Desktop
-    Value: 5108640
-  Exists: 1
---- !u!114 &7627018867365013082
+--- !u!114 &1213623243179789210
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1035,24 +721,99 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BG/Mato
+  m_Name: event:/HFX/Tent2
   m_EditorClassIdentifier: 
-  Path: event:/BG/Mato
+  Path: event:/HFX/Tent2
   Guid:
-    Data1: -1321348092
-    Data2: 1202294642
-    Data3: -352604483
-    Data4: 1611090424
+    Data1: 1397442988
+    Data2: 1184759687
+    Data3: 1608215970
+    Data4: -1293471448
   Banks:
-  - {fileID: -6345083789240468230}
+  - {fileID: 2777881967812672783}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 303515
---- !u!114 &8473532763289993518
+  Length: 17000
+--- !u!114 &2777881967812672783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Fase4.bank
+  m_EditorClassIdentifier: 
+  Path: SonsCharles/Build/Desktop/Fase4.bank
+  Name: Fase4
+  StudioPath: bank:/Fase4
+  lastModified: 638989904434544410
+  FileSizes:
+  - Name: Desktop
+    Value: 3682368
+  Exists: 1
+--- !u!114 &3045514981332097842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MX/Charles
+  m_EditorClassIdentifier: 
+  Path: event:/MX/Charles
+  Guid:
+    Data1: 1343232621
+    Data2: 1269989999
+    Data3: -568493159
+    Data4: -1601149700
+  Banks:
+  - {fileID: 3993171476539259066}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 51200
+--- !u!114 &3889644869743686610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BG/MatoNaIlha
+  m_EditorClassIdentifier: 
+  Path: event:/BG/MatoNaIlha
+  Guid:
+    Data1: -1174329967
+    Data2: 1277606730
+    Data3: -1970338930
+    Data4: 1524209542
+  Banks:
+  - {fileID: -7828441558520997327}
+  - {fileID: 2777881967812672783}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 218120
+--- !u!114 &3993171476539259066
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1067,12 +828,219 @@ MonoBehaviour:
   Path: SonsCharles/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-<<<<<<< Updated upstream
-  lastModified: 638991047756479383
-=======
-  lastModified: 638989904434614375
->>>>>>> Stashed changes
+  lastModified: 638992651728741254
   FileSizes:
   - Name: Desktop
     Value: 2063904
   Exists: 1
+--- !u!114 &4292630165646581275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BG/RioSom
+  m_EditorClassIdentifier: 
+  Path: event:/BG/RioSom
+  Guid:
+    Data1: 1571538007
+    Data2: 1074989945
+    Data3: -1359830606
+    Data4: -42363996
+  Banks:
+  - {fileID: -7828441558520997327}
+  - {fileID: -1142899292140392209}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 97497
+--- !u!114 &5791513391459363639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Fase3.bank
+  m_EditorClassIdentifier: 
+  Path: SonsCharles/Build/Desktop/Fase3.bank
+  Name: Fase3
+  StudioPath: bank:/Fase3
+  lastModified: 638989904433744358
+  FileSizes:
+  - Name: Desktop
+    Value: 5108640
+  Exists: 1
+--- !u!114 &6174583648976346945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Intera
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Intera
+  Guid:
+    Data1: 362500946
+    Data2: 1235281143
+    Data3: 1369808531
+    Data4: -636996551
+  Banks:
+  - {fileID: -7828441558520997327}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 465
+--- !u!114 &6529908141853821772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/HFX/Tent3
+  m_EditorClassIdentifier: 
+  Path: event:/HFX/Tent3
+  Guid:
+    Data1: -501885774
+    Data2: 1284348709
+    Data3: 1567995022
+    Data4: -999320784
+  Banks:
+  - {fileID: 2777881967812672783}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 27768
+--- !u!114 &7329080094356827121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/DocInt
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/DocInt
+  Guid:
+    Data1: -1405621133
+    Data2: 1217490906
+    Data3: 758141616
+    Data4: 897758579
+  Banks:
+  - {fileID: -7828441558520997327}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 450
+--- !u!114 &7414632050497077875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MX/Ilhas
+  m_EditorClassIdentifier: 
+  Path: event:/MX/Ilhas
+  Guid:
+    Data1: -1840459920
+    Data2: 1101476659
+    Data3: -764292938
+    Data4: 971411548
+  Banks:
+  - {fileID: 2777881967812672783}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 69818
+--- !u!114 &8405567438508597030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MX/Rio
+  m_EditorClassIdentifier: 
+  Path: event:/MX/Rio
+  Guid:
+    Data1: 2011141323
+    Data2: 1101111598
+    Data3: -969963594
+    Data4: 1909547600
+  Banks:
+  - {fileID: -1142899292140392209}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 134000
+--- !u!114 &8725121925060903983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BG/Patagos
+  m_EditorClassIdentifier: 
+  Path: event:/BG/Patagos
+  Guid:
+    Data1: 2073781286
+    Data2: 1118174957
+    Data3: 690875036
+    Data4: -1608070720
+  Banks:
+  - {fileID: -7828441558520997327}
+  - {fileID: 5791513391459363639}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 180000
