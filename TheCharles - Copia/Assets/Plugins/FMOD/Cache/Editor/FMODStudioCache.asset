@@ -124,7 +124,11 @@ MonoBehaviour:
   Path: SonsCharles/Build/Desktop/Fase4.bank
   Name: Fase4
   StudioPath: bank:/Fase4
+<<<<<<< Updated upstream
   lastModified: 638990949527322881
+=======
+  lastModified: 638989904434544410
+>>>>>>> Stashed changes
   FileSizes:
   - Name: Desktop
     Value: 3682368
@@ -144,7 +148,11 @@ MonoBehaviour:
   Path: SonsCharles/Build/Desktop/Fase1.bank
   Name: Fase1
   StudioPath: bank:/Fase1
+<<<<<<< Updated upstream
   lastModified: 638990949491813861
+=======
+  lastModified: 638989904431744357
+>>>>>>> Stashed changes
   FileSizes:
   - Name: Desktop
     Value: 15435232
@@ -164,7 +172,11 @@ MonoBehaviour:
   Path: SonsCharles/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
+<<<<<<< Updated upstream
   lastModified: 638991047756489311
+=======
+  lastModified: 638989904434624388
+>>>>>>> Stashed changes
   FileSizes:
   - Name: Desktop
     Value: 2236
@@ -429,7 +441,11 @@ MonoBehaviour:
   Path: SonsCharles/Build/Desktop/Fase2.bank
   Name: Fase2
   StudioPath: bank:/Fase2
+<<<<<<< Updated upstream
   lastModified: 638990949503948964
+=======
+  lastModified: 638989904432424363
+>>>>>>> Stashed changes
   FileSizes:
   - Name: Desktop
     Value: 2500896
@@ -517,7 +533,11 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: -5389170231698843960}
   cacheVersion: 131847
+<<<<<<< Updated upstream
   cacheTime: 638991047756489311
+=======
+  cacheTime: 638989904434644393
+>>>>>>> Stashed changes
   SerializableEventsDict:
   - key: event:/BG/Mato
     index: 0
@@ -619,7 +639,11 @@ MonoBehaviour:
   Path: SonsCharles/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
+<<<<<<< Updated upstream
   lastModified: 638990949537275633
+=======
+  lastModified: 638989904434644393
+>>>>>>> Stashed changes
   FileSizes:
   - Name: Desktop
     Value: 506
@@ -992,7 +1016,11 @@ MonoBehaviour:
   Path: SonsCharles/Build/Desktop/Fase3.bank
   Name: Fase3
   StudioPath: bank:/Fase3
+<<<<<<< Updated upstream
   lastModified: 638990949515772362
+=======
+  lastModified: 638989904433744358
+>>>>>>> Stashed changes
   FileSizes:
   - Name: Desktop
     Value: 5108640
@@ -1039,7 +1067,11 @@ MonoBehaviour:
   Path: SonsCharles/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
+<<<<<<< Updated upstream
   lastModified: 638991047756479383
+=======
+  lastModified: 638989904434614375
+>>>>>>> Stashed changes
   FileSizes:
   - Name: Desktop
     Value: 2063904
