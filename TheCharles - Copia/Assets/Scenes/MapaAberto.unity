@@ -76011,20 +76011,20 @@ MonoBehaviour:
   missao3Ativa: 0
   livros:
   - {fileID: 1839432376}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 876884722}
+  - {fileID: 162863909}
+  - {fileID: 994521145}
   livrosMissao3:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1676821508}
+  - {fileID: 1639319181}
   barra: {fileID: 677733637}
   afeto: 0
   android: {fileID: 1422432771}
   fadeController: {fileID: 542658054}
   fb: {fileID: 496421974}
-  minimapaUNI: {fileID: 0}
-  minimapaABERTO: {fileID: 0}
-  minimapaBIBLIO: {fileID: 0}
+  minimapaUNI: {fileID: 1309944168}
+  minimapaABERTO: {fileID: 312792878}
+  minimapaBIBLIO: {fileID: 1409136703}
 --- !u!114 &1398196630
 MonoBehaviour:
   m_ObjectHideFlags: 0
