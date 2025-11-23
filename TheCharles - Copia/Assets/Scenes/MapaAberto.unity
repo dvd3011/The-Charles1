@@ -6830,10 +6830,10 @@ MonoBehaviour:
   - {fileID: 289299122}
   - {fileID: 299885023}
   - {fileID: 1839432376}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 876884722}
+  - {fileID: 162863909}
+  - {fileID: 994521145}
+  - {fileID: 1676821508}
   - {fileID: 1945854940}
   - {fileID: 318638260}
   - {fileID: 311122111}
@@ -6841,7 +6841,7 @@ MonoBehaviour:
   - {fileID: 959839862}
   - {fileID: 333501997}
   - {fileID: 1915302492}
-  - {fileID: 0}
+  - {fileID: 1639319181}
 --- !u!1 &410820632
 GameObject:
   m_ObjectHideFlags: 0
