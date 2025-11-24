@@ -392,7 +392,7 @@ MonoBehaviour:
   m_text: THE CHARLES
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9405cd9130f588f40a453f545b3a7f51, type: 2}
-  m_sharedMaterial: {fileID: 0}
+  m_sharedMaterial: {fileID: 2180264, guid: 9405cd9130f588f40a453f545b3a7f51, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1542,7 +1542,7 @@ MonoBehaviour:
   m_text: Button
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9405cd9130f588f40a453f545b3a7f51, type: 2}
-  m_sharedMaterial: {fileID: 0}
+  m_sharedMaterial: {fileID: 2180264, guid: 9405cd9130f588f40a453f545b3a7f51, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2253,8 +2253,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: FIM
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9405cd9130f588f40a453f545b3a7f51, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: 7f190f0f2bbf9c047bc6cf389acfc502, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7d8b25c52f531de46856901496d23cc7, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 7d8b25c52f531de46856901496d23cc7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
