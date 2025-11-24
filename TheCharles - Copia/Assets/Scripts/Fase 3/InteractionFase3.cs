@@ -304,7 +304,6 @@ public class InteractionFase3 : MonoBehaviour
         // Desativa o minigame
         if (minigameLimpezaObject != null)
         {
-            Destroy(objetoAtual);
             if (vassouraScript != null)
             {
                 vassouraScript.ResetPosition();
