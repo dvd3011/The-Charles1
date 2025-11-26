@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Inspector
   m_RootView: {fileID: 4}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 149
+  controlID: 43
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -150,7 +150,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 148
+  controlID: 101
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -222,7 +222,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 97
+  controlID: 107
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -383,23 +383,23 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Sprites/Hud
     m_Globs: []
     m_OriginalText: 
     m_FilterByTypeIntersection: 0
   m_ViewMode: 1
   m_StartGridSize: 57
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Sprites/Hud
   m_LastFoldersGridSize: 57
   m_LastProjectPath: C:\Users\david\Downloads\The-Charles1\TheCharles - Copia
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 127}
-    m_SelectedIDs: 5c720000
-    m_LastClickedID: 29276
-    m_ExpandedIDs: 00000000387200003a7200006672000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 323}
+    m_SelectedIDs: ca8b0000
+    m_LastClickedID: 35786
+    m_ExpandedIDs: 00000000006a0000026a00003c6a000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -427,7 +427,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000387200003a720000
+    m_ExpandedIDs: 00000000006a0000026a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -479,7 +479,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 33}
     m_GridSize: 57
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 115
@@ -857,9 +857,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 391.66428, y: 359.4554, z: -0.33773026}
+    m_Target: {x: 416.53455, y: 268.74374, z: -0.5025015}
     speed: 2
-    m_Value: {x: 391.66428, y: 359.4554, z: -0.33773026}
+    m_Value: {x: 416.53455, y: 268.74374, z: -0.5025015}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -910,9 +910,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 87.996185
+    m_Target: 122.46087
     speed: 2
-    m_Value: 87.996185
+    m_Value: 122.46087
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -969,20 +969,20 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: a8720000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 4ca2ffff9ea2ffff68a6ffff22a7ffffeaa7ffff50a9ffff84aaffff50aeffff6aafffff94b0ffff9cb4ffffdab6ffff5cb8ffff9eb9ffff68bdfffff8beffff08c1ffff32c5ffffeec5ffff8eefffffaef4ffff22fbffffd066000068680000746c0000cca20000e8a300007aa4000086a40000fca400006ca5000096a50000d2a50000f2a5000040a6000090a60000703f0100844a0100144b01007e4c01006e4d01000851010068520100985e0100e25e0100f45e0100325f0100825f0100fc600100ba7101001a7e0100e47f0100f683010064850100b68501000e860100da8f0100fc8f01000291010068910100809101000e92010058920100a8980100169f0100d6b3010040c7010086d7010012d90100
+      m_ExpandedIDs: 74c2ffffc2c2ffff20c5ffff46c5ffffe0c8ffff6cc9fffff8c9ffff0acaffff10caffff50cffffffed0ffff18d7ffff12d9ffffa4dfffff68e0ffffc4e4ffff2ce6fffffeecffffcef0ffff9af1ffffe6f1ffff44f4ffff6af4ffff04f8ffff90f8ffff2cf9ffff44f9ffff4af9ffff22fbffff96c2000000c40000c6c4000010c80000ecc800005ed7000076e400000af00000de0101003c020100de02010098170100a4180100a21c01006c3201002233010016340100fe3d0100303e0100a63e01002a3f010070420100ea4c010040530100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Text (TMP) (1)
-        m_OriginalName: Text (TMP) (1)
+        m_Name: Text (TMP)
+        m_OriginalName: Text (TMP)
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -13848
+        m_UserData: 65672
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
         m_OriginalEventType: 0
