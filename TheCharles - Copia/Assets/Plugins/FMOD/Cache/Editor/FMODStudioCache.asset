@@ -96,10 +96,10 @@ MonoBehaviour:
   Path: SonsCharles/Build/Desktop/Fase1.bank
   Name: Fase1
   StudioPath: bank:/Fase1
-  lastModified: 638990007283568157
+  lastModified: 638998308954345709
   FileSizes:
   - Name: Desktop
-    Value: 15435232
+    Value: 15594912
   Exists: 1
 --- !u!114 &-7391552366113909876
 MonoBehaviour:
@@ -155,6 +155,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 37000
+--- !u!114 &-7077070396903127410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MX/Tack
+  m_EditorClassIdentifier: 
+  Path: event:/MX/Tack
+  Guid:
+    Data1: -2033883323
+    Data2: 1128632983
+    Data3: -986089838
+    Data4: 985604759
+  Banks:
+  - {fileID: -7828441558520997327}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 12000
 --- !u!114 &-6800938857442032791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -387,7 +414,7 @@ MonoBehaviour:
   Path: SonsCharles/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638990007284319711
+  lastModified: 638998309006276817
   FileSizes:
   - Name: Desktop
     Value: 506
@@ -462,7 +489,7 @@ MonoBehaviour:
   Path: SonsCharles/Build/Desktop/Fase2.bank
   Name: Fase2
   StudioPath: bank:/Fase2
-  lastModified: 638990007283760909
+  lastModified: 638998308966122003
   FileSizes:
   - Name: Desktop
     Value: 2500896
@@ -482,10 +509,10 @@ MonoBehaviour:
   Path: SonsCharles/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638994256950944118
+  lastModified: 638998309006187040
   FileSizes:
   - Name: Desktop
-    Value: 2236
+    Value: 2272
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -537,13 +564,14 @@ MonoBehaviour:
   - {fileID: 123319668973543584}
   - {fileID: -4605076113256908305}
   - {fileID: 3045514981332097842}
+  - {fileID: -7077070396903127410}
   EditorParameters: []
   MasterBanks:
   - {fileID: 3993171476539259066}
   StringsBanks:
   - {fileID: -574213385213160692}
   cacheVersion: 131847
-  cacheTime: 638994256950944118
+  cacheTime: 638998309006276817
   SerializableEventsDict:
   - key: event:/BG/Mato
     index: 0
@@ -603,6 +631,8 @@ MonoBehaviour:
     index: 27
   - key: event:/MX/Charles
     index: 28
+  - key: event:/MX/Tack
+    index: 29
 --- !u!114 &91453860390328338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -753,7 +783,7 @@ MonoBehaviour:
   Path: SonsCharles/Build/Desktop/Fase4.bank
   Name: Fase4
   StudioPath: bank:/Fase4
-  lastModified: 638990007284274051
+  lastModified: 638998308989447388
   FileSizes:
   - Name: Desktop
     Value: 3682368
@@ -828,7 +858,7 @@ MonoBehaviour:
   Path: SonsCharles/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638994256950944118
+  lastModified: 638998309006177072
   FileSizes:
   - Name: Desktop
     Value: 2063904
@@ -876,7 +906,7 @@ MonoBehaviour:
   Path: SonsCharles/Build/Desktop/Fase3.bank
   Name: Fase3
   StudioPath: bank:/Fase3
-  lastModified: 638990007284035220
+  lastModified: 638998308978494953
   FileSizes:
   - Name: Desktop
     Value: 5108640

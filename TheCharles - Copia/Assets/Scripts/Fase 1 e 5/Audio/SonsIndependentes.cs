@@ -16,6 +16,7 @@ public class SonsIndependentes : MonoBehaviour
     [Header("Configurações de Distância")]
     [Tooltip("Distância em que o som é ouvido no volume máximo")]
     [SerializeField] private float minDistance = 2f;
+    
     [Tooltip("Distância máxima em que o som fica inaudível")]
     [SerializeField] private float maxDistance = 10f;
 
@@ -35,7 +36,7 @@ public class SonsIndependentes : MonoBehaviour
             return;
         }
 
-        // Seleciona o evento com base no enum escolhido no Inspector
+        // Seleciona o evento com base no enum
         selectedEvent = GetEventReferenceFromType(soundType);
 
         if (selectedEvent.IsNull)
@@ -45,6 +46,10 @@ public class SonsIndependentes : MonoBehaviour
         }
 
         soundInstance = RuntimeManager.CreateInstance(selectedEvent);
+
+        // ⚠ Importante: definir atributos 3D ANTES de start()
+        soundInstance.set3DAttributes(RuntimeUtils.To3DAttributes(transform));
+
         soundInstance.start();
         isPlaying = true;
     }
@@ -54,10 +59,10 @@ public class SonsIndependentes : MonoBehaviour
         if (!isPlaying || player == null)
             return;
 
-        // Atualiza posição 3D para FMOD
-        soundInstance.set3DAttributes(RuntimeUtils.To3DAttributes(gameObject));
+        // Atualiza atributos 3D corretamente
+        soundInstance.set3DAttributes(RuntimeUtils.To3DAttributes(transform.position));
 
-        // Calcula volume baseado na distância
+        // Calcula volume
         float distance = Vector3.Distance(player.position, transform.position);
         float volume = CalculateVolume(distance);
         soundInstance.setVolume(volume);
@@ -67,13 +72,12 @@ public class SonsIndependentes : MonoBehaviour
     {
         if (distance <= minDistance)
             return baseVolume;
-        else if (distance >= maxDistance)
+
+        if (distance >= maxDistance)
             return 0f;
-        else
-        {
-            float t = (distance - minDistance) / (maxDistance - minDistance);
-            return Mathf.Lerp(baseVolume, 0f, t);
-        }
+
+        float t = (distance - minDistance) / (maxDistance - minDistance);
+        return Mathf.Lerp(baseVolume, 0f, t);
     }
 
     private EventReference GetEventReferenceFromType(SoundType type)
@@ -91,6 +95,16 @@ public class SonsIndependentes : MonoBehaviour
         }
     }
 
+    private void OnDisable()
+    {
+        // ⚠ obrigatório: para sons que continuam após o objeto sumir
+        if (soundInstance.isValid())
+        {
+            soundInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            soundInstance.release();
+        }
+    }
+
     private void OnDestroy()
     {
         if (soundInstance.isValid())
@@ -105,6 +119,7 @@ public class SonsIndependentes : MonoBehaviour
     {
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(transform.position, minDistance);
+
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, maxDistance);
     }
