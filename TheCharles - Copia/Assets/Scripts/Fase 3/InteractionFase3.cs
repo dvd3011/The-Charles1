@@ -47,6 +47,7 @@ public class InteractionFase3 : MonoBehaviour
     public GameObject canvasMinigame;
     public CollectFeedBack fb;
     public Vassora vassouraScript;
+    private BoxCollider2D playerCollider;
     void Awake()
     {
         currentHeat = maxHeat;  
@@ -65,6 +66,7 @@ public class InteractionFase3 : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         if (spriteRenderer != null)
             baseColor = spriteRenderer.color;
+        playerCollider = GetComponent<BoxCollider2D>();
     }
 
     void Update()
@@ -161,6 +163,10 @@ public class InteractionFase3 : MonoBehaviour
         {
             if (other.CompareTag("RegEscava"))
             {
+                if (playerCollider != null)
+                {
+                    playerCollider.isTrigger = true;
+                }
                 // Inicia escava��o se poss�vel
                 DigSite site = objetoAtual.GetComponent<DigSite>();
                 if (site != null && site.CanDig())
@@ -174,10 +180,10 @@ public class InteractionFase3 : MonoBehaviour
 
     private IEnumerator StopCollectingAfterDelay(float delay)
     {
-        pl.enabled = false;
+        PausePlayerMovement(true);
         yield return new WaitForSeconds(delay); // Espera pelo tempo especificado
         coletando = false; // Define coletando como false
-        pl.enabled = true;
+        PausePlayerMovement(false);
     }
 
     public void OnInteracts(InputValue value)
@@ -190,10 +196,10 @@ public class InteractionFase3 : MonoBehaviour
     {
         if (pl != null)
         {
-            pl.enabled = !pause; // true = pausa (desabilita), false = reativa
+            // pl.enabled = !pause; // REMOVA ESTA LINHA
+            pl.isMovementPaused = pause; // USE A NOVA FLAG
         }
-        // Opcional: Pause outros inputs aqui (ex.: desabilite PlayerInput se tiver)
-        Debug.Log(pause ? "Movimento do jogador pausado para limpeza." : "Movimento do jogador reativado.");
+        Debug.Log(pause ? "Movimento do jogador pausado..." : "Movimento do jogador reativado.");
     }
 
     public void DestruirObjetoAtual()
@@ -228,7 +234,7 @@ public class InteractionFase3 : MonoBehaviour
         currentDigSite = site;
         currentDigs = 0;
         digsRequired = site.digsRequired; // Usa o valor do site (pode variar)
-        pl.enabled = false; // Pausa movimento, similar � coleta
+        PausePlayerMovement(true);
         Debug.Log("Iniciando escava��o...");
         if (minigameLimpezaObject != null)
         {
@@ -258,6 +264,7 @@ public class InteractionFase3 : MonoBehaviour
         }
 
     }
+   
     void CompleteDigging()
     {
         Debug.Log("Escava��o conclu�da! Iniciando limpeza...");
@@ -299,8 +306,11 @@ public class InteractionFase3 : MonoBehaviour
     public void FinishCleaning()
     {
         Debug.Log("Limpeza Conclu�da!");
-
-        // Desativa o minigame
+        if (playerCollider != null)
+        {
+            playerCollider.isTrigger = false;
+        }
+        // Desativa o minigamea
         if (minigameLimpezaObject != null)
         {
             if (vassouraScript != null)
@@ -317,7 +327,7 @@ public class InteractionFase3 : MonoBehaviour
 
         // Retorna o jogador ao estado normal
         currentState = PlayerState.Idle;
-        pl.enabled = true; // Reativa movimento
+        PausePlayerMovement(true); // Reativa movimento
 
         // Aqui voc� pode instanciar o pr�mio/f�ssil final
         // Instantiate(currentDigSite.fossilPrefab, ...);

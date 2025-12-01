@@ -22,7 +22,6 @@ public class PlayerMoveFase3 : MonoBehaviour
     Vector3 offset = Vector3.zero;
     float offsetDistance = 10f; // Distância para interaction box
 
-
     private Animator animator;
     private static readonly int IsWalking = Animator.StringToHash("IsWalking");
     private static readonly int MoveDirectionX = Animator.StringToHash("MoveDirectionX");
@@ -33,6 +32,7 @@ public class PlayerMoveFase3 : MonoBehaviour
     private bool isFootstepPlaying = false;
     [SerializeField] private float footstepPitchMultiplier = 1f;
     [SerializeField] private float stealthFootstepPitchMultiplier = 0.5f; // Mais baixo no stealth para "silencioso"
+    [HideInInspector] public bool isMovementPaused = false;
 
 
 
@@ -64,7 +64,10 @@ public class PlayerMoveFase3 : MonoBehaviour
 
     void FixedUpdate()
     {
-        Walk();
+        if (!isMovementPaused)
+        {
+            Walk();
+        }
     }
 
     private void Walk()
@@ -144,9 +147,10 @@ public class PlayerMoveFase3 : MonoBehaviour
     // Input System: Sprint (desabilitado no stealth)
     public void OnCorrer(InputValue value)
     {
-        if (isStealth) return; // Não permite sprint no stealth
+        //if (isStealth) return; // Mantenha esta linha se 'stealth' ainda bloquear sprint
+        if (isStealth || isMovementPaused) return; // Adicione o bloqueio da pausa aqui
 
-        correndo = value.isPressed; // Aqui isPressed funciona porque "Correr" é uma ação de Button
+        correndo = value.isPressed;
         currentSpeed = correndo ? sprintSpeed : normalSpeed;
     }
 
