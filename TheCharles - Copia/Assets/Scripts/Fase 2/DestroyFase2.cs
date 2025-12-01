@@ -23,7 +23,7 @@ public class DestroyFase2 : MonoBehaviour
         {
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
             fb.ShowFeedback("+1 Tentilhão", Color.yellow);
-            DesativarDepois(gameObject, 2f);
+            DesativarDepois(gameObject, 0f);
         }
         if (gameObject.CompareTag("Planta"))
         {
@@ -31,7 +31,7 @@ public class DestroyFase2 : MonoBehaviour
 
             fb.GetComponent<CollectFeedBack>().ShowFeedback("+1 Planta", Color.yellow);
 
-            DesativarDepois(gameObject, 2f);
+            DesativarDepois(gameObject, 0f);
         }
         if (gameObject.CompareTag("Livro"))
         {
@@ -39,28 +39,28 @@ public class DestroyFase2 : MonoBehaviour
             fb.ShowFeedback("+1 Livro", Color.yellow);
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
 
-            DesativarDepois(gameObject, 2f);
+            DesativarDepois(gameObject, 0f);
         }
         if (gameObject.CompareTag("BeijaFlor"))
         {
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
 
             fb.ShowFeedback("+1 Beija Flor", Color.yellow);
-            DesativarDepois(gameObject, 2f);
+            DesativarDepois(gameObject, 0f);
         }
         if (gameObject.CompareTag("Sapo"))
         {
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
 
             fb.ShowFeedback("+1 Sapo", Color.yellow);
-            DesativarDepois(gameObject, 2f);
+            DesativarDepois(gameObject, 0f);
         }
         if (gameObject.CompareTag("Semente"))
         {
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
             fb.ShowFeedback("+1 Semente", Color.yellow);
 
-            DesativarDepois(gameObject, 2f);
+            DesativarDepois(gameObject, 0f);
         }
         if (gameObject.CompareTag("Folha"))
         {
@@ -68,14 +68,14 @@ public class DestroyFase2 : MonoBehaviour
 
             fb.ShowFeedback("+1 Folha", Color.yellow);
 
-            DesativarDepois(gameObject, 2f);
+            DesativarDepois(gameObject, 0f);
         }
         if (gameObject.CompareTag("Banana"))
         {
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
             fb.ShowFeedback("+1 Banana", Color.yellow);
 
-            DesativarDepois(gameObject, 2f);
+            DesativarDepois(gameObject, 0f);
         }
         if (gameObject.CompareTag("Madeira"))
         {
@@ -83,42 +83,42 @@ public class DestroyFase2 : MonoBehaviour
 
             fb.ShowFeedback("+1 Madeira", Color.yellow);
 
-            DesativarDepois(gameObject, 2f);
+            DesativarDepois(gameObject, 0f);
         }
         if (gameObject.CompareTag("Pedra"))
         {
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
             fb.ShowFeedback("+1 Pedra", Color.yellow);
 
-            DesativarDepois(gameObject, 2f);
+            DesativarDepois(gameObject, 0f);
         }
         if (gameObject.CompareTag("Borracha"))
         {
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
 
             fb.ShowFeedback("+1 Borracha", Color.yellow);
-            DesativarDepois(gameObject, 2f);
+            DesativarDepois(gameObject, 0f);
         }
         if (gameObject.CompareTag("Fruta"))
         {
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
 
             fb.ShowFeedback("+1 Fruta", Color.yellow);
-            DesativarDepois(gameObject, 2f);
+            DesativarDepois(gameObject, 0f);
         }
         if (gameObject.CompareTag("Cipo"))
         {
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
 
             fb.ShowFeedback("+1 Cipo", Color.yellow);
-            DesativarDepois(gameObject, 2f);
+            DesativarDepois(gameObject, 0f);
         }
-        if(gameObject.CompareTag("Borboleta"))
+        if (gameObject.CompareTag("Borboleta"))
         {
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
 
             fb.ShowFeedback("+1 Borboleta", Color.yellow);
-            DesativarDepois(gameObject, 2f);
+            DesativarDepois(gameObject, 0f);
         }
 
     }

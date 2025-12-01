@@ -45,7 +45,6 @@ public class InteractionFase3 : MonoBehaviour
     public GameObject minigameLimpezaObject;
     private SpawPoeira spoeira;
     public GameObject canvasMinigame;
-    public FadeController fadeController;
     public CollectFeedBack fb;
     public Vassora vassouraScript;
     void Awake()

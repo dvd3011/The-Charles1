@@ -24,7 +24,7 @@ void Start()
         {
             gameObject.GetComponent<CircleCollider2D>().enabled = false;
             fb.ShowFeedback("+1 Tentilh�o", Color.yellow);
-            DesativarDepois(gameObject, 2f);
+            DesativarDepois(gameObject, 0f);
         }
         if (gameObject.CompareTag("Planta"))
         {
@@ -32,7 +32,7 @@ void Start()
 
             fb.GetComponent<CollectFeedBack>().ShowFeedback( "+1 Planta", Color.yellow);
 
-            DesativarDepois(gameObject, 2f);
+            DesativarDepois(gameObject, 0f);
             interactions.CheckMissionProgress();
         }
         if (gameObject.CompareTag("Livro"))
@@ -41,7 +41,7 @@ void Start()
             fb.ShowFeedback( "+1 Livro", Color.yellow);
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
 
-            DesativarDepois(gameObject, 2f);
+            DesativarDepois(gameObject, 0f);
             interactions.CheckMissionProgress();
         }
         if (gameObject.CompareTag("BeijaFlor"))
@@ -50,7 +50,7 @@ void Start()
 
             fb.ShowFeedback("+1 Beija Flor", Color.yellow);
             interactions.CheckMissionProgress();
-            DesativarDepois(gameObject, 2f);
+            DesativarDepois(gameObject, 0f);
         }
         if (gameObject.CompareTag("Sapo"))
         {
@@ -58,7 +58,7 @@ void Start()
 
             fb.ShowFeedback("+1 Sapo", Color.yellow);
             interactions.CheckMissionProgress();
-            DesativarDepois(gameObject, 2f);
+            DesativarDepois(gameObject, 0f);
         }
         if (gameObject.CompareTag("Semente"))
         {
@@ -66,7 +66,7 @@ void Start()
             interactions.CheckMissionProgress();
             fb.ShowFeedback("+1 Semente", Color.yellow);
 
-            DesativarDepois(gameObject, 2f);
+            DesativarDepois(gameObject, 0f);
         }
         if (gameObject.CompareTag("Folha"))
         {
@@ -75,7 +75,7 @@ void Start()
 
             fb.ShowFeedback("+1 Folha", Color.yellow);
 
-            DesativarDepois(gameObject, 2f);
+            DesativarDepois(gameObject, 0f);
         }
         if (gameObject.CompareTag("Banana"))
         {
@@ -83,7 +83,7 @@ void Start()
             interactions.CheckMissionProgress();
             fb.ShowFeedback( "+1 Banana", Color.yellow);
 
-            DesativarDepois(gameObject, 2f);
+            DesativarDepois(gameObject, 0f);
         }
         if (gameObject.CompareTag("Madeira"))
         {
@@ -92,7 +92,7 @@ void Start()
 
             fb.ShowFeedback( "+1 Madeira", Color.yellow);
 
-            DesativarDepois(gameObject, 2f);
+            DesativarDepois(gameObject, 0f);
         }
         if (gameObject.CompareTag("Pedra"))
         {
@@ -100,7 +100,7 @@ void Start()
             interactions.CheckMissionProgress();
             fb.ShowFeedback("+1 Pedra", Color.yellow);
 
-            DesativarDepois(gameObject, 2f);
+            DesativarDepois(gameObject, 0f);
         }
         if (gameObject.CompareTag("Borracha"))
         {
@@ -108,7 +108,7 @@ void Start()
 
             fb.ShowFeedback( "+1 Borracha", Color.yellow);
             interactions.CheckMissionProgress();
-            DesativarDepois(gameObject, 2f);
+            DesativarDepois(gameObject, 0f);
         }
         if (gameObject.CompareTag("Fruta"))
         {
@@ -116,7 +116,7 @@ void Start()
 
             fb.ShowFeedback("+1 Fruta", Color.yellow);
             interactions.CheckMissionProgress();
-            DesativarDepois(gameObject, 2f);
+            DesativarDepois(gameObject, 0f);
         }
         if (gameObject.CompareTag("Cipo"))
         {
@@ -124,9 +124,9 @@ void Start()
 
             fb.ShowFeedback("+1 Cipo", Color.yellow);
             interactions.CheckMissionProgress();
-            DesativarDepois(gameObject, 2f);
+            DesativarDepois(gameObject, 0f);
         }
-       
+
     }
     public void DesativarDepois(GameObject objeto, float tempo)
     {

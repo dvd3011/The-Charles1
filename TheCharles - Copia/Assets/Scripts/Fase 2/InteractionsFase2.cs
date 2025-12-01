@@ -25,7 +25,6 @@ public class InteractionsFase2 : MonoBehaviour
     public GameObject regMacaco, regPassaro;
     float timer;
     bool comecaTimer;
-        public FadeController fadeController;
     public CollectFeedBack fb;
     public GameObject posPlayerArmadilha, posPlayerArmadilhaPassaro;
     public GameObject cameraMacaco, cameraPassaro, mainCamera;
@@ -132,7 +131,6 @@ public class InteractionsFase2 : MonoBehaviour
             }
             if (missao == 4 && other.CompareTag("Borboleta"))
             {
-                fadeController.StartFade(objetoAtual, 2f, true);
                 other.GetComponent<DestroyFase2>().Destruir();
                 StartCoroutine(StopCollectingAfterDelayBorboleta(0.5f));
                 placar.PlacarBorboleta(1);
@@ -142,7 +140,6 @@ public class InteractionsFase2 : MonoBehaviour
 
             if (other.CompareTag("Folha"))
             {
-                fadeController.StartFade(objetoAtual, 2f, true);
 
                 other.GetComponent<DestroyFase2>().Destruir();
                 placar.PlacarFolha(1);
@@ -151,7 +148,6 @@ public class InteractionsFase2 : MonoBehaviour
             }
             else if (other.CompareTag("Madeira"))
             {
-                fadeController.StartFade(objetoAtual, 2f, true);
 
                 other.GetComponent<DestroyFase2>().Destruir();
                 placar.PlacarMadeira(1);
@@ -160,7 +156,6 @@ public class InteractionsFase2 : MonoBehaviour
             }
             else if (other.CompareTag("Pedra"))
             {
-                fadeController.StartFade(objetoAtual, 2f, true);
 
                 other.GetComponent<DestroyFase2>().Destruir();
                 placar.PlacarPedra(1);
@@ -169,7 +164,6 @@ public class InteractionsFase2 : MonoBehaviour
             }
             else if (other.CompareTag("Banana"))
             {
-                fadeController.StartFade(objetoAtual, 2f, true);
 
                 other.GetComponent<DestroyFase2>().Destruir();
                 placar.PlacarBanana(1);
@@ -178,7 +172,6 @@ public class InteractionsFase2 : MonoBehaviour
             }
             else if (other.CompareTag("Semente"))
             {
-                fadeController.StartFade(objetoAtual, 2f, true);
 
                 other.GetComponent<DestroyFase2>().Destruir();
                 placar.PlacarSemente(1);

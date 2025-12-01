@@ -27,7 +27,6 @@ public class InteractionsFase4 : MonoBehaviour
     public GameObject projetilPrefab;   // arrasta no Inspector
     public Transform firePoint;         // posi��o de spawn do tiro
     private float projectileSpeed = 5f; // velocidade do tiro
-    public FadeController fadeController;
     public GameObject tentilhao1;
     public GameObject posIlha2, posIlha3;
     public GameObject posPlayerArmadilha;
@@ -55,7 +54,6 @@ public class InteractionsFase4 : MonoBehaviour
 
         if (coletando == true)
         {
-                            fadeController.StartFade(objetoAtual, 2f, true);
 
             StartCoroutine(StopCollectingAfterDelay(0.4f)); // Inicia a coroutine com um atraso de 1 segundo
 
@@ -158,7 +156,6 @@ public class InteractionsFase4 : MonoBehaviour
            
             if (other.CompareTag("Tentilhao"))
             {
-                fadeController.StartFade(objetoAtual, 2f, true);
 
                 stealtharea.SetActive(false);
                 other.GetComponent<DestroyerFase4>().Destruir();
@@ -170,7 +167,6 @@ public class InteractionsFase4 : MonoBehaviour
 
             else if (other.CompareTag("Cipo"))
             {
-                fadeController.StartFade(objetoAtual, 2f, true);
 
                 Debug.Log("foi");
                 other.GetComponent<DestroyerFase4>().Destruir();
@@ -179,7 +175,6 @@ public class InteractionsFase4 : MonoBehaviour
             }
             else if (other.CompareTag("Madeira"))
             {
-                fadeController.StartFade(objetoAtual, 2f, true);
 
                 other.GetComponent<DestroyerFase4>().Destruir();
                 placar.PlacarMadeira(1);
@@ -188,7 +183,6 @@ public class InteractionsFase4 : MonoBehaviour
         
             else if (other.CompareTag("Fruta"))
             {
-                fadeController.StartFade(objetoAtual, 2f, true);
 
 
                 other.GetComponent<DestroyerFase4>().Destruir();
@@ -197,7 +191,6 @@ public class InteractionsFase4 : MonoBehaviour
             }
             else if (other.CompareTag("Borracha"))
             {
-                fadeController.StartFade(objetoAtual, 2f, true);
                 Debug.Log("foi");
 
                 other.GetComponent<DestroyerFase4>().Destruir();

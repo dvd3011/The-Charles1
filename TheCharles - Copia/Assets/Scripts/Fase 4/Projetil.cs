@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Projetil : MonoBehaviour
 {
-    public FadeController fadeController;
     private HudFase4 placar;
 
     private bool jaColidiu = false; // Flag para evitar múltiplas colisões
@@ -19,15 +18,12 @@ public class Projetil : MonoBehaviour
         if (jaColidiu) return; // Sai se já colidiu
         if(!jaColidiu)
         {
-            fadeController.StartFade(gameObject,2f,true);
             Destroy(this.gameObject, 1f);
         }
         if (other.CompareTag("TentE"))
         {
             jaColidiu = true; // Marca como já colidido
-            fadeController.StartFade(gameObject,2f,true);
             Destroy(this.gameObject,1f);
-            fadeController.StartFade(other.gameObject, 2f, true);
 
             other.GetComponent<DestroyerFase4>().Destruir();
             placar.PlacarTent(1);

@@ -55,7 +55,7 @@ public class PlayerMoveFase4 : MonoBehaviour
     void Update()
     {
         animator.SetBool("Correndo", correndo && !isStealth); // Desabilita anima��o de corrida no stealth
-
+        animator.SetBool("isStealth", isStealth);
 
         UpdateHandPoint();
 

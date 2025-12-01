@@ -49,7 +49,6 @@ public class InteractionsI : MonoBehaviour
     private PlayerMove pl;
     bool coletando;
     public GameObject android;
-    public FadeController fadeController;
     public CollectFeedBack fb;
     public GameObject minimapaUNI, minimapaABERTO, minimapaBIBLIO;
 
@@ -176,7 +175,6 @@ public class InteractionsI : MonoBehaviour
 
             if (caller == "Sapo")
             {
-                fadeController.StartFade(objetoAtual, 2f, true);
 
                 Debug.Log("Você acertou o sapo!");
                 objetoAtual.GetComponent<Destroyer>().Destruir();
@@ -187,7 +185,6 @@ public class InteractionsI : MonoBehaviour
             }
             else if (caller == "BeijaFlor")
             {
-                fadeController.StartFade(objetoAtual, 2f, true);
                 Debug.Log("Você acertou o beija flor!");
                 objetoAtual.GetComponent<Destroyer>().Destruir();
                 placar.PlacarBeija(1);
@@ -282,7 +279,7 @@ public class InteractionsI : MonoBehaviour
         if (apertouF && objetoAtual != null)
         {
             if (other.CompareTag("Planta"))
-            {   fadeController.StartFade(objetoAtual, 2f, true);
+            {  
                 //PlayInteractionSound();
                 other.GetComponent<Destroyer>().Destruir();
                 placar.PlacarPlanta(1);
@@ -290,7 +287,6 @@ public class InteractionsI : MonoBehaviour
             }
             else if (other.CompareTag("Livro"))
             {
-                            fadeController.StartFade(objetoAtual, 2f, true);
 
                 PlayDocInt();
                 other.GetComponent<Destroyer>().Destruir();
