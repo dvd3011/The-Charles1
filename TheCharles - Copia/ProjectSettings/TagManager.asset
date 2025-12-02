@@ -37,6 +37,7 @@ TagManager:
   - RegEscava1
   - RegEscava2
   - RegEscava4
+  - armadilha
   layers:
   - Default
   - TransparentFX

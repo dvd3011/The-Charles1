@@ -7,6 +7,8 @@ public class MenuController : MonoBehaviour
     public GameObject menuMusic;
     public GameObject OptionsMenu;
 
+    public GameObject painelTutorial;
+
     private AudioZoneManager audioZoneManager;
 
     // Estados salvos ao pausar
@@ -76,7 +78,15 @@ public class MenuController : MonoBehaviour
         pauseMenu.SetActive(true);
         OptionsMenu.SetActive(false);
     }
+    public void Tutorial()
+    {
+        painelTutorial.SetActive(true);
+    }
+    public void OkTutorial()
+    {
+        painelTutorial.SetActive(false);
 
+    }
     public void Jogar()
     {
         SceneManager.LoadScene("Diario");

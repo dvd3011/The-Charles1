@@ -51,6 +51,7 @@ public class InteractionsI : MonoBehaviour
     public GameObject android;
     public CollectFeedBack fb;
     public GameObject minimapaUNI, minimapaABERTO, minimapaBIBLIO;
+    public GameObject timer1, timer2;
 
     void Awake()
     {
@@ -90,6 +91,8 @@ public class InteractionsI : MonoBehaviour
         barra.AlterarBarraDeAfeto(afeto);
         if (missao3Ativa)
         {
+            timer2.SetActive(true);
+
             timerMissao3 -= Time.deltaTime;
             if (timerMissao3 <= 0 && placar.livroAtual < 2)
             {
@@ -110,12 +113,15 @@ public class InteractionsI : MonoBehaviour
 
             if (placar.livroAtual >= 2)
             {
+                timer2.SetActive(false);
+
                 missao3Ativa = false;
             }
         }
 
         if (missao2Ativa)
         {
+            timer1.SetActive(true);
             timerMissao2 -= Time.deltaTime;
             if (timerMissao2 <= 0 && placar.livroAtual < 4)
             {
@@ -135,6 +141,8 @@ public class InteractionsI : MonoBehaviour
             }
             if (placar.livroAtual >= 4)
             {
+                timer1.SetActive(false);
+
                 missao2Ativa = false;
             }
         }

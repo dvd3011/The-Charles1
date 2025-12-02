@@ -115,7 +115,7 @@ public class InteractionFase3 : MonoBehaviour
         }
 
         // L�gica de Escava��o: Presses repetidos de 'F' durante Digging
-        if (currentState == PlayerState.Digging && Keyboard.current.fKey.wasPressedThisFrame)
+        if (currentState == PlayerState.Digging && apertouF)
         {
             Dig();
         }
