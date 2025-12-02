@@ -328,7 +328,7 @@ MonoBehaviour:
   pauseMenu: {fileID: 1302826902}
   menuMusic: {fileID: 2082562099}
   OptionsMenu: {fileID: 193691351}
-  painelTutorial: {fileID: 0}
+  painelTutorial: {fileID: 1045308777}
 --- !u!4 &16653928
 Transform:
   m_ObjectHideFlags: 0
