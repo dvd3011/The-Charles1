@@ -96,7 +96,7 @@ MonoBehaviour:
   Path: SonsCharles/Build/Desktop/Fase1.bank
   Name: Fase1
   StudioPath: bank:/Fase1
-  lastModified: 638998308954345709
+  lastModified: 639002036650000000
   FileSizes:
   - Name: Desktop
     Value: 15594912
@@ -414,7 +414,7 @@ MonoBehaviour:
   Path: SonsCharles/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638998309006276817
+  lastModified: 639002036650000000
   FileSizes:
   - Name: Desktop
     Value: 506
@@ -489,7 +489,7 @@ MonoBehaviour:
   Path: SonsCharles/Build/Desktop/Fase2.bank
   Name: Fase2
   StudioPath: bank:/Fase2
-  lastModified: 638998308966122003
+  lastModified: 639002036650000000
   FileSizes:
   - Name: Desktop
     Value: 2500896
@@ -509,7 +509,7 @@ MonoBehaviour:
   Path: SonsCharles/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638998309006187040
+  lastModified: 639002036650000000
   FileSizes:
   - Name: Desktop
     Value: 2272
@@ -571,7 +571,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: -574213385213160692}
   cacheVersion: 131847
-  cacheTime: 638998309006276817
+  cacheTime: 639002036650000000
   SerializableEventsDict:
   - key: event:/BG/Mato
     index: 0
@@ -783,7 +783,7 @@ MonoBehaviour:
   Path: SonsCharles/Build/Desktop/Fase4.bank
   Name: Fase4
   StudioPath: bank:/Fase4
-  lastModified: 638998308989447388
+  lastModified: 639002036650000000
   FileSizes:
   - Name: Desktop
     Value: 3682368
@@ -858,7 +858,7 @@ MonoBehaviour:
   Path: SonsCharles/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638998309006177072
+  lastModified: 639002036650000000
   FileSizes:
   - Name: Desktop
     Value: 2063904
@@ -906,7 +906,7 @@ MonoBehaviour:
   Path: SonsCharles/Build/Desktop/Fase3.bank
   Name: Fase3
   StudioPath: bank:/Fase3
-  lastModified: 638998308978494953
+  lastModified: 639002036650000000
   FileSizes:
   - Name: Desktop
     Value: 5108640
