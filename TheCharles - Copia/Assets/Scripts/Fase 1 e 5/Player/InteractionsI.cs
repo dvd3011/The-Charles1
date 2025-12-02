@@ -78,7 +78,7 @@ public class InteractionsI : MonoBehaviour
     {
         if(IsInScene("Fase5") && placar.sapoAtual>=2 && placar.beijaAtual>=2)
         {
-                            SceneManager.LoadScene("Diario");
+                            SceneManager.LoadScene("Cutscene10");
 
         }
         anim.SetBool("Coletando", coletando);
@@ -416,7 +416,7 @@ public class InteractionsI : MonoBehaviour
             {
                 missaoCompletou = true;
                 missao3Ativa = false;
-                SceneManager.LoadScene("Diario");
+                SceneManager.LoadScene("Cutscene3");
 
             }
         }

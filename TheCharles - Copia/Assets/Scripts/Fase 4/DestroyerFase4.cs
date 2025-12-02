@@ -76,7 +76,7 @@ public class DestroyerFase4 : MonoBehaviour
         {
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
 
-            fb.ShowFeedback("+1 Fruta", Color.yellow);
+            fb.ShowFeedback("+1 Semente", Color.yellow);
             DesativarDepois(gameObject, 0f);
         }
         if (gameObject.CompareTag("Cipo"))

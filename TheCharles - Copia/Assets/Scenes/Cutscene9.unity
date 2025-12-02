@@ -301,6 +301,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5426291345494145037, guid: ea167176f477cf8418a6b76fa02e630d, type: 3}
+      propertyPath: isStartCutscene
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5945355376328127719, guid: ea167176f477cf8418a6b76fa02e630d, type: 3}
       propertyPath: m_VideoClip
       value: 
@@ -309,6 +313,10 @@ PrefabInstance:
       propertyPath: m_TargetCamera
       value: 
       objectReference: {fileID: 453120863}
+    - target: {fileID: 5945355376328127719, guid: ea167176f477cf8418a6b76fa02e630d, type: 3}
+      propertyPath: m_AudioOutputMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6740173630001091646, guid: ea167176f477cf8418a6b76fa02e630d, type: 3}
       propertyPath: m_Camera
       value: 

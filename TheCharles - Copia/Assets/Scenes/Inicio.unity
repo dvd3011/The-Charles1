@@ -569,7 +569,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -58, y: -202}
+  m_AnchoredPosition: {x: -47, y: -138.22}
   m_SizeDelta: {x: 750, y: 750}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1712045529
@@ -766,6 +766,7 @@ MonoBehaviour:
   pauseMenu: {fileID: 0}
   menuMusic: {fileID: 0}
   OptionsMenu: {fileID: 0}
+  painelTutorial: {fileID: 0}
 --- !u!4 &1997612806
 Transform:
   m_ObjectHideFlags: 0

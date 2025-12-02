@@ -274,7 +274,7 @@ public class InteractionsFase2 : MonoBehaviour
         }
         if (missao == 7)
         {
-            SceneManager.LoadScene("Diario");
+            SceneManager.LoadScene(8);
 
         }
 

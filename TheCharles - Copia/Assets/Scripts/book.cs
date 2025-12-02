@@ -80,27 +80,27 @@ public class book : MonoBehaviour
 
     public void Fase1()
     {
-        SceneManager.LoadScene("MapaAberto");
+        SceneManager.LoadScene( 3);
     }
 
     public void Fase2()
     {
-        SceneManager.LoadScene("Fase2");
+        SceneManager.LoadScene(6);
     }
 
     public void Fase3()
     {
-        SceneManager.LoadScene("Fase3");
+        SceneManager.LoadScene(9);
     }
 
     public void Fase4()
     {
-        SceneManager.LoadScene("Fase4");
+        SceneManager.LoadScene(12);
     }
 
     public void Fase5()
     {
-        SceneManager.LoadScene("Fase5");
+        SceneManager.LoadScene(14);
     }
 
     IEnumerator Rotate(float angle, bool forward)

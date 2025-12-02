@@ -275,7 +275,7 @@ public class InteractionsFase4 : MonoBehaviour
 
             if (placar.tentilhaoAtual>=2)
             {
-                SceneManager.LoadScene("Diario");
+                SceneManager.LoadScene(11);
             }
         }
     

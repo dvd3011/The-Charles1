@@ -4,26 +4,41 @@ using UnityEngine;
 using UnityEngine.Video;
 using UnityEngine.SceneManagement;
 
+
 public class cut : MonoBehaviour
 {
+     public bool isStartCutscene;  // Cutscene de comeÃ§o de fase
     public VideoPlayer videoPlayer;
+
 
     void Start()
     {
+       
+       videoPlayer.loopPointReached += OnVideoEnd;
        videoPlayer.Play();
     }
     void Update()
     {
-     // Quando o vídeo terminar, chama a função OnVideoEnd
-        videoPlayer.loopPointReached += OnVideoEnd;
+     // Quando o vï¿½deo terminar, chama a funï¿½ï¿½o OnVideoEnd
+        
     }
+
 
     void OnVideoEnd(VideoPlayer vp)
     {
-        // Pega o index da cena atual
         int cenaAtual = SceneManager.GetActiveScene().buildIndex;
 
-        // Carrega a próxima cena
-        SceneManager.LoadScene(cenaAtual + 1);
+
+        if (isStartCutscene)
+        {
+            // Vai para a prÃ³xima fase
+            SceneManager.LoadScene(cenaAtual + 1);
+        }
+        else
+        {
+            // Vai para a cena do DiÃ¡rio
+            SceneManager.LoadScene("Diario");
+        }
+        
     }
 }

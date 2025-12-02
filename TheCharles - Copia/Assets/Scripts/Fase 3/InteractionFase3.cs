@@ -73,7 +73,7 @@ public class InteractionFase3 : MonoBehaviour
     {
         if(placar.fossilAtual>=4)
         {
-            SceneManager.LoadScene("Diario");
+            SceneManager.LoadScene(11);
 
         }
 
