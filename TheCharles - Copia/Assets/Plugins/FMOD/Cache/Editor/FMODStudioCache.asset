@@ -96,7 +96,7 @@ MonoBehaviour:
   Path: SonsCharles/Build/Desktop/Fase1.bank
   Name: Fase1
   StudioPath: bank:/Fase1
-  lastModified: 639002813409518680
+  lastModified: 639002842827638704
   FileSizes:
   - Name: Desktop
     Value: 15594912
@@ -372,6 +372,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 16000
+--- !u!114 &-2074632418103108007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Folha
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Folha
+  Guid:
+    Data1: 360996331
+    Data2: 1281901935
+    Data3: -179307362
+    Data4: 2134409624
+  Banks:
+  - {fileID: 3993171476539259066}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 731
 --- !u!114 &-1649406038221836572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -414,7 +441,7 @@ MonoBehaviour:
   Path: SonsCharles/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 639002813410352468
+  lastModified: 639002823955162790
   FileSizes:
   - Name: Desktop
     Value: 506
@@ -489,10 +516,10 @@ MonoBehaviour:
   Path: SonsCharles/Build/Desktop/Fase2.bank
   Name: Fase2
   StudioPath: bank:/Fase2
-  lastModified: 639002813409680001
+  lastModified: 639002851581702784
   FileSizes:
   - Name: Desktop
-    Value: 2500896
+    Value: 2693376
   Exists: 1
 --- !u!114 &-574213385213160692
 MonoBehaviour:
@@ -509,10 +536,10 @@ MonoBehaviour:
   Path: SonsCharles/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639002813410352468
+  lastModified: 639002851582191482
   FileSizes:
   - Name: Desktop
-    Value: 2272
+    Value: 2352
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -565,13 +592,15 @@ MonoBehaviour:
   - {fileID: -4605076113256908305}
   - {fileID: 3045514981332097842}
   - {fileID: -7077070396903127410}
+  - {fileID: -2074632418103108007}
+  - {fileID: 8736364785219448085}
   EditorParameters: []
   MasterBanks:
   - {fileID: 3993171476539259066}
   StringsBanks:
   - {fileID: -574213385213160692}
   cacheVersion: 131847
-  cacheTime: 639002813410352468
+  cacheTime: 639002851582191482
   SerializableEventsDict:
   - key: event:/BG/Mato
     index: 0
@@ -633,6 +662,10 @@ MonoBehaviour:
     index: 28
   - key: event:/MX/Tack
     index: 29
+  - key: event:/SFX/Folha
+    index: 30
+  - key: event:/HFX/Macaw
+    index: 31
 --- !u!114 &91453860390328338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -783,7 +816,7 @@ MonoBehaviour:
   Path: SonsCharles/Build/Desktop/Fase4.bank
   Name: Fase4
   StudioPath: bank:/Fase4
-  lastModified: 639002813410132988
+  lastModified: 639002842879240213
   FileSizes:
   - Name: Desktop
     Value: 3682368
@@ -858,10 +891,10 @@ MonoBehaviour:
   Path: SonsCharles/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639002813410352468
+  lastModified: 639002851582171531
   FileSizes:
   - Name: Desktop
-    Value: 2063904
+    Value: 2075520
   Exists: 1
 --- !u!114 &4292630165646581275
 MonoBehaviour:
@@ -906,7 +939,7 @@ MonoBehaviour:
   Path: SonsCharles/Build/Desktop/Fase3.bank
   Name: Fase3
   StudioPath: bank:/Fase3
-  lastModified: 639002813409941363
+  lastModified: 639002842863011610
   FileSizes:
   - Name: Desktop
     Value: 5108640
@@ -1074,3 +1107,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 180000
+--- !u!114 &8736364785219448085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/HFX/Macaw
+  m_EditorClassIdentifier: 
+  Path: event:/HFX/Macaw
+  Guid:
+    Data1: 2003659851
+    Data2: 1292629143
+    Data3: 1105594770
+    Data4: 1822025742
+  Banks:
+  - {fileID: -1142899292140392209}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 14144

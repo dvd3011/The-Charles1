@@ -21,6 +21,7 @@ public class FMODEvents : MonoBehaviour
     [field: SerializeField] public EventReference tent1Sound { get; private set; }
     [field: SerializeField] public EventReference tent2Sound { get; private set; }
     [field: SerializeField] public EventReference tent3Sound { get; private set; }
+    [field: SerializeField] public EventReference ararara { get; private set; }
 
     [field: Header("SFX")]
     [field: SerializeField] public EventReference doorSound { get; private set; }
@@ -29,6 +30,7 @@ public class FMODEvents : MonoBehaviour
     [field: SerializeField] public EventReference collectSound { get; private set; }
     [field: SerializeField] public EventReference captuSound { get; private set; }
     [field: SerializeField] public EventReference armarSound { get; private set; }
+    [field: SerializeField] public EventReference pageSound { get; private set; }
 
     public static FMODEvents instance { get; private set; }
 

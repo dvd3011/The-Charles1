@@ -91,6 +91,7 @@ public class SonsIndependentes : MonoBehaviour
             case SoundType.Tent2: return FMODEvents.instance.tent2Sound;
             case SoundType.Tent3: return FMODEvents.instance.tent3Sound;
             case SoundType.Botafogo: return FMODEvents.instance.botafogo;
+            case SoundType.Ararara: return FMODEvents.instance.ararara;
             default: return new EventReference();
         }
     }
@@ -134,5 +135,6 @@ public enum SoundType
     Tent1,
     Tent2,
     Tent3,
-    Botafogo
+    Botafogo,
+    Ararara
 }
