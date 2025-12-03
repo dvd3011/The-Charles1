@@ -95,7 +95,7 @@ public class book : MonoBehaviour
 
     public void Fase4()
     {
-        SceneManager.LoadScene(12);
+        SceneManager.LoadScene(9);
     }
 
     public void Fase5()
